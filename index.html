@@ -19,6 +19,7 @@
         <img class="brand-logo" src="assets/ion-academy-logo.png" alt="" />
         <span>i:ON Academy ABA</span>
       </a>
+      <div class="hamburger" onclick="toggleMenu()">☰</div> 
       <nav class="nav" aria-label="Primary navigation">
         <a href="#services">Services</a>
         <a href="#approach">About i:ON</a>
@@ -311,24 +312,32 @@
           <p class="eyebrow">Resource</p>
           <h2 id="resources-title">Parent Support Guide</h2>
         </div>
-        <div class="resource-carousel" aria-label="Parent resource pamphlet pages">
-          <article id="resource-page-1" class="resource-slide">
-            <img
-              src="assets/resource-pages/page-1.png"
-              alt="i:ON Academy ABA pamphlet page 1"
-            />
-          </article>
-          <article id="resource-page-2" class="resource-slide">
-            <img
-              src="assets/resource-pages/page-2.png"
-              alt="i:ON Academy ABA pamphlet page 2"
-            />
-          </article>
-        </div>
-        <div class="carousel-dots" aria-label="Resource carousel navigation">
-          <a href="#resource-page-1" aria-label="Show pamphlet page 1"></a>
-          <a href="#resource-page-2" aria-label="Show pamphlet page 2"></a>
-        </div>
+<div class="carousel-wrapper">
+
+  <button class="carousel-btn prev">‹</button>
+
+  <div class="resource-carousel">
+
+    <a class="resource-card" href="assets/pdf/en/guide1.pdf" target="_blank">
+      <img src="assets/resource-pages/en/guide1.png" />
+      <p>What is ABA?</p>
+    </a>
+
+    <a class="resource-card" href="assets/pdf/en/guide2.pdf" target="_blank">
+      <img src="assets/resource-pages/en/guide2.png" />
+      <p>Why i:ON?</p>
+    </a>
+
+    <a class="resource-card" href="assets/pdf/en/guide3.pdf" target="_blank">
+      <img src="assets/resource-pages/en/guide3.png" />
+      <p>i:ON</p>
+    </a>
+
+  </div>
+
+  <button class="carousel-btn next">›</button>
+
+</div>
       </section>
     </main>
 
@@ -350,5 +359,52 @@
         <p>1220 W Trinity Mills Rd, Ste 264, Carrollton, TX 75006<br />(214) 296-2252</p>
       </div>
     </footer>
+
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+  window.toggleMenu = function () {
+    document.querySelector('.nav').classList.toggle('active');
+  };
+});
+</script>
+  <div class="pdf-modal" id="pdfModal">
+  <div class="pdf-modal-content">
+    <span class="pdf-close">&times;</span>
+    <iframe id="pdfViewer"></iframe>
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+  window.openPDF = function (file) {
+    const modal = document.getElementById("pdfModal");
+    const viewer = document.getElementById("pdfViewer");
+
+    viewer.src = file;
+    modal.style.display = "flex";
+  };
+
+  document.querySelector(".pdf-close").onclick = function () {
+    document.getElementById("pdfModal").style.display = "none";
+  };
+
+});
+</script>
+<script>
+const carousel = document.querySelector('.resource-carousel');
+const nextBtn = document.querySelector('.next');
+const prevBtn = document.querySelector('.prev');
+
+const scrollAmount = 280;
+
+nextBtn.addEventListener('click', () => {
+  carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+});
+
+prevBtn.addEventListener('click', () => {
+  carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+});
+</script>
   </body>
 </html>

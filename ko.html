@@ -19,6 +19,7 @@
         <img class="brand-logo" src="assets/ion-academy-logo.png" alt="" />
         <span>i:ON Academy ABA</span>
       </a>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
       <nav class="nav" aria-label="주요 메뉴">
         <a href="#services">서비스</a>
         <a href="#approach">i:ON 소개</a>
@@ -44,7 +45,7 @@
         />
         <div class="hero-copy">
           <p>아이와 가족을 위한 맞춤 ABA 지원</p>
-          <h1 id="hero-title">모든 아이의 가능성을 밝힙니다</h1>
+          <h1 id="hero-title">모든 아이의<br>가능성을 밝힙니다</h1>
           <a
             class="button light"
             href="https://forms.gle/RTpyYF7iYQdudDqh7"
@@ -99,7 +100,7 @@
         <h2 id="team-title">Meet Our Team</h2>
         <div class="team-grid">
           <article>
-            <h3>Hye Ran Park, Ph.D, BCBA, LBA</h3>
+            <h3>박혜란, Ph.D, BCBA, LBA</h3>
             <h4>학력</h4>
             <ul>
               <li>
@@ -113,7 +114,7 @@
             </ul>
           </article>
           <article>
-            <h3>Harper Jeong, M.Ed., BCBA, LBA</h3>
+            <h3>Harper Jeong,(정윤영) M.Ed., BCBA, LBA</h3>
             <h4>학력</h4>
             <ul>
               <li>
@@ -301,24 +302,32 @@
           <p class="eyebrow">자료</p>
           <h2 id="resources-title">부모님 지원 가이드</h2>
         </div>
-        <div class="resource-carousel" aria-label="부모님 자료 안내 페이지">
-          <article id="resource-page-1" class="resource-slide">
-            <img
-              src="assets/resource-pages/page-1.png"
-              alt="i:ON Academy ABA pamphlet page 1"
-            />
-          </article>
-          <article id="resource-page-2" class="resource-slide">
-            <img
-              src="assets/resource-pages/page-2.png"
-              alt="i:ON Academy ABA pamphlet page 2"
-            />
-          </article>
-        </div>
-        <div class="carousel-dots" aria-label="자료 캐러셀 이동">
-          <a href="#resource-page-1" aria-label="안내 자료 1페이지 보기"></a>
-          <a href="#resource-page-2" aria-label="안내 자료 2페이지 보기"></a>
-        </div>
+        <<div class="carousel-wrapper">
+
+  <button class="carousel-btn prev">‹</button>
+
+  <div class="resource-carousel">
+
+    <a class="resource-card" href="assets/pdf/kr/guide 1.pdf" target="_blank">
+      <img src="assets/resource-pages/kr/guide1.png" />
+      <p>ABA란 무엇인가요?</p>
+    </a>
+
+    <a class="resource-card" href="assets/pdf/kr/guide 2.pdf" target="_blank">
+      <img src="assets/resource-pages/kr/guide2.png" />
+      <p>왜 i:ON인가요?</p>
+    </a>
+
+    <a class="resource-card" href="assets/pdf/kr/guide 3.pdf" target="_blank">
+      <img src="assets/resource-pages/kr/guide3.png" />
+      <p>i:ON 소개</p>
+    </a>
+
+  </div>
+
+  <button class="carousel-btn next">›</button>
+
+</div>
       </section>
     </main>
 
@@ -340,5 +349,13 @@
         <p>1220 W Trinity Mills Rd, Ste 264, Carrollton, TX 75006<br />(214) 296-2252</p>
       </div>
     </footer>
-  </body>
+  <script>
+document.addEventListener("DOMContentLoaded", function () {
+  window.toggleMenu = function () {
+    document.querySelector('.nav').classList.toggle('active');
+  }
+});
+</script>
+  
+</body>
 </html>
