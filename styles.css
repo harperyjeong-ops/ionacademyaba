@@ -781,3 +781,35 @@ footer p {
 .resource-card:first-child {
   margin-left: 4px;
 }
+.resource-card img {
+  width: 100%;
+  max-width: 260px;   /* 카드 안에서 최대 크기 */
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+.resource-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.resource-card {
+  flex: 0 0 260px;
+  scroll-snap-align: center;
+  text-align: center;
+}
+
+.resource-card img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+.resource-subtext {
+  color: white;      
+  font-size: 2.0rem;   
+  margin-top: 8px;
+}
