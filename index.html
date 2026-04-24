@@ -12,6 +12,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <header class="site-header">
@@ -19,13 +20,13 @@
         <img class="brand-logo" src="assets/ion-academy-logo.png" alt="" />
         <span>i:ON Academy ABA</span>
       </a>
-      <div class="hamburger" onclick="toggleMenu()">☰</div> 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#services">Services</a>
-        <a href="#approach">About i:ON</a>
-        <a href="#resources">Resource</a>
-        <a href="#faq">FAQs</a>
-      </nav>
+      <div class="hamburger" onclick="toggleMenu()">≡</div>
+        <nav class="nav" aria-label="Primary navigation">
+          <a href="#services">Services</a>
+          <a href="#approach">About i:ON</a>
+          <a href="#resources">Resource</a>
+          <a href="#faq">FAQs</a>
+        </nav>
       <a class="lang-switch" href="ko.html">한국어</a>
       <a
         class="header-cta"
@@ -475,6 +476,17 @@ document.addEventListener("DOMContentLoaded", function () {
   prevBtn?.addEventListener('click', () => {
     carousel?.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
   });
+});
+</script>
+<script>
+function toggleMenu() {
+  const nav = document.querySelector('.nav');
+  nav.classList.toggle('active');
+}
+</script>
+<script>
+document.querySelector(".hamburger").addEventListener("click", () => {
+  document.querySelector(".nav").classList.toggle("active");
 });
 </script>
   </body>

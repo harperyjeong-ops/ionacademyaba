@@ -63,6 +63,13 @@ a {
   font-weight: 700;
 }
 
+.hamburger {
+  display: none; /* 기본적으로 숨김 */
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--ink);
+}
+
 .brand-logo {
   width: 34px;
   height: 34px;
@@ -751,11 +758,29 @@ footer p {
 @media (max-width: 860px) {
   .site-header {
     gap: 10px;
+    position: fixed; /* 고정 상태 유지 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94vw;
   }
 
  .nav {
-  display: flex;
- }
+    display: none; /* 🔥 기본 숨김 */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .nav.active {
+    display: flex; /* 🔥 클릭하면 등장 */
+  }
+
+  .hamburger {
+    display: block; /* 🔥 햄버거 보이기 */
+  }
 
   .brand span:last-child {
     display: none;
@@ -802,6 +827,19 @@ footer p {
     top: 8px;
     width: calc(100vw - 20px);
   }
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .hamburger {
+    display: block;  /* 🔥 여기 중요 */
+  }
 
   .header-cta {
     padding: 0 12px;
@@ -835,8 +873,57 @@ footer p {
     min-height: 68px;
   }
 }
+
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;  /* 🔥 여기 중요 */
+  }
+
+  .resource-carousel {
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .resource-card {
+    flex: 0 0 85%;   /* 🔥 카드 크게 (핵심) */
+  }
+
+  .carousel-btn {
+    display: none;   /* 🔥 모바일에서는 버튼 숨김 */
+  }
+  footer {
+    grid-template-columns: 1fr;
+  }
+
+  footer > div:last-child {
+    text-align: left;
+  }
+  .hamburger {
+    display: block; /* 🔥 햄버거 보이기 */
+  }
+}
+
 .hamburger {
   display: none;
+  font-size: 28px;
+  cursor: pointer;
 }
 
 .carousel-wrapper {
@@ -877,29 +964,6 @@ footer p {
 
 .carousel-btn.next {
   right: 10px;
-}
-
-@media (max-width: 768px) {
-
-  .resource-carousel {
-    gap: 16px;
-    padding: 10px;
-  }
-
-  .resource-card {
-    flex: 0 0 85%;   /* 🔥 카드 크게 (핵심) */
-  }
-
-  .carousel-btn {
-    display: none;   /* 🔥 모바일에서는 버튼 숨김 */
-  }
-  footer {
-    grid-template-columns: 1fr;
-  }
-
-  footer > div:last-child {
-    text-align: left;
-  }
 }
 
 .parallax {
