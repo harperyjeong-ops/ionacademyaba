@@ -764,23 +764,37 @@ footer p {
     width: 94vw;
   }
 
- .nav {
-    display: none; /* 🔥 기본 숨김 */
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    width: 200px;
+.nav {
+    display: none; /* 평소에는 숨김 */
   }
 
   .nav.active {
-    display: flex; /* 🔥 클릭하면 등장 */
+    display: block !important; /* 클릭 시 강제로 표시 */
+    position: absolute;
+    top: 60px;   /* 헤더 높이에 맞춰 조정하세요 */
+    right: 0;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 9999;
   }
 
   .hamburger {
-    display: block; /* 🔥 햄버거 보이기 */
+    display: block;
+    z-index: 1000;
+    cursor: pointer;
+    /* 👇 아래 속성들을 추가해서 강제로 보이게 해보세요 */
+    width: 30px;
+    height: 30px;
+    color: #000;      /* 아이콘 색상 (검정) */
+    background: #ccc; /* 위치 확인용 배경색 (나중에 삭제) */
+    font-size: 30px;  /* 아이콘 크기 */
+    line-height: 30px;
+    text-align: center;
+    }
   }
+
+
 
   .brand span:last-child {
     display: none;
@@ -820,7 +834,7 @@ footer p {
   .contact {
     gap: 26px;
   }
-}
+
 
 @media (max-width: 520px) {
   .site-header {
@@ -828,18 +842,33 @@ footer p {
     width: calc(100vw - 20px);
   }
   .nav {
-    display: none;
+    display: none; /* 평소에는 숨김 */
+  }
+
+  .nav.active {
+    display: block !important; /* 클릭 시 강제로 표시 */
     position: absolute;
-    top: 100%;
+    top: 60px;   /* 헤더 높이에 맞춰 조정하세요 */
     right: 0;
-    background: white;
-    flex-direction: column;
     width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 9999;
   }
 
   .hamburger {
-    display: block;  /* 🔥 여기 중요 */
-  }
+    display: block;
+    z-index: 1000;
+    cursor: pointer;
+    /* 👇 아래 속성들을 추가해서 강제로 보이게 해보세요 */
+    width: 30px;
+    height: 30px;
+    color: #000;      /* 아이콘 색상 (검정) */
+    background: #ccc; /* 위치 확인용 배경색 (나중에 삭제) */
+    font-size: 30px;  /* 아이콘 크기 */
+    line-height: 30px;
+    text-align: center;
+    }
 
   .header-cta {
     padding: 0 12px;
@@ -877,24 +906,33 @@ footer p {
 @media (max-width: 768px) {
 
   .nav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    flex-direction: column;
-    width: 200px;
+    display: none; /* 평소에는 숨김 */
   }
 
   .nav.active {
-    display: flex;
+    display: block !important; /* 클릭 시 강제로 표시 */
+    position: absolute;
+    top: 60px;   /* 헤더 높이에 맞춰 조정하세요 */
+    right: 0;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 9999;
   }
 
   .hamburger {
     display: block;
-    font-size: 28px;
-    cursor: pointer;  /* 🔥 여기 중요 */
-  }
+    z-index: 1000;
+    cursor: pointer;
+    /* 👇 아래 속성들을 추가해서 강제로 보이게 해보세요 */
+    width: 30px;
+    height: 30px;
+    color: #000;      /* 아이콘 색상 (검정) */
+    background: #ccc; /* 위치 확인용 배경색 (나중에 삭제) */
+    font-size: 30px;  /* 아이콘 크기 */
+    line-height: 30px;
+    text-align: center;
+    }
 
   .resource-carousel {
     gap: 16px;
@@ -917,6 +955,7 @@ footer p {
   }
   .hamburger {
     display: block; /* 🔥 햄버거 보이기 */
+    z-index: 1000;
   }
 }
 
