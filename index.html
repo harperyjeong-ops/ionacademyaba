@@ -13,29 +13,39 @@
     <link rel="stylesheet" href="styles.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="i:ON Academy ABA home">
-        <img class="brand-logo" src="assets/ion-academy-logo.png" alt="" />
-        <span>i:ON Academy ABA</span>
-      </a>
-      <div class="hamburger" onclick="toggleMenu()">≡</div>
-        <nav class="nav" aria-label="Primary navigation">
-          <a href="#services">Services</a>
-          <a href="#approach">About i:ON</a>
-          <a href="#resources">Resource</a>
-          <a href="#faq">FAQs</a>
-        </nav>
-      <a class="lang-switch" href="ko.html">한국어</a>
-      <a
-        class="header-cta"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSflN78NAI327tLRnySt_xbOaprF9NbbIA9tcFPK0c57y0Qo8Q/viewform?usp=header"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Book Free Consultation
-      </a>
-    </header>
+  <body><header class="site-header">
+
+  <a class="brand" href="#top" aria-label="i:ON Academy ABA home">
+    <img class="brand-logo" src="assets/ion-academy-logo.png" alt="" />
+    <span>i:ON Academy ABA</span>
+  </a>
+
+  <!-- 🔥 오른쪽 묶기 -->
+  <div class="header-right">
+
+    <a class="lang-switch" href="ko.html">한국어</a>
+
+    <a
+      class="header-cta"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSflN78NAI327tLRnySt_xbOaprF9NbbIA9tcFPK0c57y0Qo8Q/viewform?usp=header"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Book Free Consultation
+    </a>
+
+    <div class="hamburger">≡</div>
+
+  </div>
+
+  <nav class="nav" aria-label="Primary navigation">
+    <a href="#services">Services</a>
+    <a href="#approach">About i:ON</a>
+    <a href="#resources">Resource</a>
+    <a href="#faq">FAQs</a>
+  </nav>
+
+</header>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
@@ -477,22 +487,22 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 </script>
+
 <script>
-function toggleMenu() {
-  const nav = document.querySelector('.nav');
-  nav.classList.toggle('active');
-}
-</script>
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("click", function (e) {
   const hamburger = document.querySelector(".hamburger");
   const nav = document.querySelector(".nav");
 
-  if (hamburger && nav) {
-    hamburger.addEventListener("click", () => {
-      nav.classList.toggle("active");
-    });
+  // 햄버거 버튼을 클릭했을 때
+  if (e.target.closest(".hamburger")) {
+    nav.classList.toggle("active");
+    console.log("현재 클래스 상태:", nav.className);
+  } 
+  // 메뉴 바깥을 클릭하면 닫히게 하고 싶을 때 (선택 사항)
+  else if (!e.target.closest(".nav") && nav.classList.contains("active")) {
+    nav.classList.remove("active");
   }
+  
 });
 </script>
   </body>
