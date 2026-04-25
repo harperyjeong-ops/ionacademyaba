@@ -755,54 +755,6 @@ footer p {
   line-height: 1.7;
 }
 
-@media (max-width: 860px) {
-  .site-header {
-    gap: 10px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 94vw;
-  }
-
-  .brand-logo {
-    height: 28px;   /* 🔥 핵심 */
-    width: auto;
-  }
-
-  .lang-switch {
-    font-size: 8px;      /* 🔥 글자 작게 */
-    padding: 2px 3px;     /* 🔥 여백 줄이기 */
-  }
-
-  .nav {
-    display: none; /* 평소에는 숨김 */
-  }
-
-  .nav.active {
-    display: flex !important;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    width: 220px;
-    background: white;
-    flex-direction: column;
-    padding: 10px;
-    gap: 10px;
-    z-index: 99999;
-  }
-
-  .hamburger {
-    display: block !important; /* 🔥 강제 표시 */
-    font-size: 26px;
-    z-index: 9999;
-  }
-
-  .header-cta {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-}
-
   .brand span {
   display: inline;
   color: #E0A800;   /* 🔥 어두운 색 */
@@ -844,56 +796,6 @@ footer p {
     gap: 26px;
   }
 
-
-@media (max-width: 520px) {
-  .site-header {
-    gap: 10px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 94vw;
-  }
-
-  .brand-logo {
-    height: 28px;   /* 🔥 핵심 */
-    width: auto;
-  }
-  
-
-  .lang-switch {
-    font-size: 8px;      /* 🔥 글자 작게 */
-    padding: 2px 3px;     /* 🔥 여백 줄이기 */
-  }
-
-  .nav {
-    display: none; /* 평소에는 숨김 */
-  }
-
- .nav.active {
-  display: flex !important;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 220px;
-  background: white;
-  flex-direction: column;
-  padding: 10px;
-  gap: 10px;
-  z-index: 99999;
-  }
-
-  .hamburger {
-    display: block !important; /* 🔥 강제 표시 */
-    font-size: 26px;
-    z-index: 9999;
-  }
-
-  .header-cta {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-}
-
   .header-cta {
     padding: 10px 16px;
     font-size: 0.78rem;
@@ -926,75 +828,6 @@ footer p {
     min-height: 68px;
   }
 
-
-@media (max-width: 768px) {
-
-  .site-header {
-    gap: 10px;
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 94vw;
-  }
-
-  .brand-logo {
-    height: 28px;   /* 🔥 핵심 */
-    width: auto;
-  }
-
-  .lang-switch {
-    font-size: 8px;      /* 🔥 글자 작게 */
-    padding: 2px 3px;     /* 🔥 여백 줄이기 */
-  }
-
-  .nav {
-    display: none; /* 평소에는 숨김 */
-  }
-
-  .nav.active {
-  display: flex !important;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 220px;
-  background: white;
-  flex-direction: column;
-  padding: 10px;
-  gap: 10px;
-  z-index: 99999;
-   }
-
-  .hamburger {
-    display: block !important; /* 🔥 강제 표시 */
-    font-size: 26px;
-    z-index: 9999;
-  }
-
-  .resource-carousel {
-    gap: 16px;
-    padding: 10px;
-  }
-
-  .resource-card {
-    flex: 0 0 85%;   /* 🔥 카드 크게 (핵심) */
-  }
-
-  .carousel-btn {
-    display: none;   /* 🔥 모바일에서는 버튼 숨김 */
-  }
-  footer {
-    grid-template-columns: 1fr;
-  }
-
-  footer > div:last-child {
-    text-align: left;
-  }
-
-  .header-cta {
-    font-size: 12px;
-    padding: 6px 10px;
-  }
-}
 
 .hamburger {
   position: static;   /* 🔥 이건 항상 */
@@ -1094,4 +927,141 @@ footer p {
 
 .phone-link:hover {
   text-decoration: underline;
+}
+
+
+  @media (max-width: 720px) {
+
+     .site-header {
+    gap: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94vw;
+    }
+
+     .brand-logo {
+    height: 28px;   /* 🔥 핵심 */
+    width: auto;
+  }
+
+     .lang-switch {
+    font-size: 8px;      /* 🔥 글자 작게 */
+    padding: 2px 3px;     /* 🔥 여백 줄이기 */
+  }
+
+     .nav {
+    display: none; /* 평소에는 숨김 */
+  }
+
+     .nav.active {
+  display: flex !important;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 220px;
+  background: white;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  z-index: 99999;
+   }
+
+     .hamburger {
+    display: block !important; /* 🔥 강제 표시 */
+    font-size: 26px;
+    z-index: 9999;
+  }
+
+     .resource-carousel {
+    gap: 16px;
+    padding: 10px;
+  }
+
+     .resource-card {
+    flex: 0 0 85%;   /* 🔥 카드 크게 (핵심) */
+  }
+
+     .carousel-btn {
+    display: none;   /* 🔥 모바일에서는 버튼 숨김 */
+  }
+     footer {
+    grid-template-columns: 1fr;
+  }
+
+     footer > div:last-child {
+    text-align: left;
+  }
+
+      .header-cta {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+     .service-grid {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    gap:16px;
+  }
+}
+
+  @media (max-width: 520px) {
+    .site-header {
+      gap: 10px;
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 94vw;
+    }
+
+    .brand-logo {
+      height: 28px;   /* 🔥 핵심 */
+      width: auto;
+    }
+    
+
+    .lang-switch {
+      font-size: 8px;      /* 🔥 글자 작게 */
+      padding: 2px 3px;     /* 🔥 여백 줄이기 */
+    }
+
+    .nav {
+      display: none; /* 평소에는 숨김 */
+    }
+
+  .nav.active {
+    display: flex !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    z-index: 99999;
+    }
+
+    .hamburger {
+      display: block !important; /* 🔥 강제 표시 */
+      font-size: 26px;
+      z-index: 9999;
+    }
+
+    .header-cta {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+  .service-grid {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    gap:16px;
+  }
+}
+
+.service-grid {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+.team-grid {
+  grid-template-columns: repeat(2, 1fr) !important;
 }
