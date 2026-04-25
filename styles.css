@@ -23,6 +23,7 @@ body {
   font-family: Inter, system-ui, sans-serif;
   font-size: 16px;
   letter-spacing: 0;
+  overflow-x: hidden;
 }
 
 img {
@@ -45,7 +46,7 @@ a {
   align-items: center;
   gap: 28px;
   width: min(94vw, 1040px);
-  height: 46px;
+  height: 50px;
   padding: 6px 8px 6px 12px;
   background: rgba(255, 255, 255, 0.92);
   border: 1px solid rgba(17, 22, 17, 0.08);
@@ -416,7 +417,7 @@ opacity: 0.8;
 }
 
 .team-grid {
-  display: grid;
+  display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
   text-align: left;
@@ -525,7 +526,7 @@ opacity: 0.8;
 }
 
 .service-list {
-  display: grid;
+  display: grid !important;
   gap: 10px;
   margin: 22px 0 0;
   padding: 0;
@@ -767,8 +768,6 @@ footer p {
     height: 620px;
   }
 
-  .team-grid,
-  .service-grid,
   .image-pair,
   .contact,
   footer {
@@ -947,7 +946,7 @@ footer p {
     
 
     .lang-switch {
-      font-size: 8px;      /* 🔥 글자 작게 */
+      font-size: 9px;      /* 🔥 글자 작게 */
       padding: 2px 3px;     /* 🔥 여백 줄이기 */
     }
 
@@ -978,6 +977,13 @@ footer p {
       font-size: 12px;
       padding: 6px 10px;
     }
+    .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+    .team-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr))/* 🔥 한 줄 */
+    gap: 16px;                  /* 살짝 줄이기 (선택) */
+  }
 
 }
 
@@ -999,7 +1005,7 @@ footer p {
   }
 
      .lang-switch {
-    font-size: 8px;      /* 🔥 글자 작게 */
+    font-size: 9px;      /* 🔥 글자 작게 */
     padding: 2px 3px;     /* 🔥 여백 줄이기 */
   }
 
@@ -1050,17 +1056,21 @@ footer p {
     font-size: 12px;
     padding: 6px 10px;
   }
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+    .team-grid {
+     grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
 
 }
 
 @media (max-width: 520px) {
     .site-header {
-      left: 50%;
+    left: 50%;
     transform: translateX(-50%);
-
-    width: calc(100% - 20px); /* 🔥 좌우 여백 */
+    width: calc(100% - 10px); /* 🔥 좌우 여백 */
     max-width: 100%;
-
     padding: 8px 12px;
   }
 
@@ -1071,7 +1081,7 @@ footer p {
     
 
     .lang-switch {
-      font-size: 8px;      /* 🔥 글자 작게 */
+      font-size: 9px;      /* 🔥 글자 작게 */
       padding: 2px 3px;     /* 🔥 여백 줄이기 */
     }
 
@@ -1102,15 +1112,13 @@ footer p {
       font-size: 12px;
       padding: 6px 10px;
     }
+    .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
+    .team-grid {
+     grid-template-columns: repeat(2, minmax(0, 1fr))
+    }
   
-}
-
-
-.service-grid {
-  grid-template-columns: repeat(2, 1fr) 
-}
-.team-grid {
-  grid-template-columns: repeat(2, 1fr) 
 }
 
 .summer-intro {
