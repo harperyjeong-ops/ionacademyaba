@@ -764,10 +764,16 @@ footer p {
 @media (max-width: 860px) {
   .site-header {
     gap: 10px;
-    position: fixed; /* 고정 상태 유지 */
+    position: fixed;
     left: 50%;
     transform: translateX(-50%);
     width: 94vw;
+  }
+
+  .header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   }
 
   .nav {
@@ -775,25 +781,21 @@ footer p {
   }
 
   .nav.active {
-  display: flex !important;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 220px;
-  background: white;
-  flex-direction: column;
-  padding: 10px;
-  gap: 10px;
-  z-index: 99999;
-}
+    display: flex !important;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 220px;
+    background: white;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    z-index: 99999;
+  }
 
   .hamburger {
     display: block !important; /* 🔥 강제 표시 */
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 28px;
+    font-size: 26px;
     z-index: 9999;
   }
 }
@@ -842,9 +844,19 @@ footer p {
 
 @media (max-width: 520px) {
   .site-header {
-    top: 8px;
-    width: calc(100vw - 20px);
+    gap: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94vw;
   }
+
+  .header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  }
+
   .nav {
     display: none; /* 평소에는 숨김 */
   }
@@ -860,17 +872,14 @@ footer p {
   padding: 10px;
   gap: 10px;
   z-index: 99999;
-}
+  }
 
   .hamburger {
     display: block !important; /* 🔥 강제 표시 */
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 28px;
+    font-size: 26px;
     z-index: 9999;
   }
+}
 
   .header-cta {
     padding: 10px 16px;
@@ -903,9 +912,22 @@ footer p {
     gap: 16px;
     min-height: 68px;
   }
-}
+
 
 @media (max-width: 768px) {
+
+  .site-header {
+    gap: 10px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 94vw;
+  }
+  .header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+   }
 
   .nav {
     display: none; /* 평소에는 숨김 */
@@ -922,15 +944,11 @@ footer p {
   padding: 10px;
   gap: 10px;
   z-index: 99999;
-}
+   }
 
   .hamburger {
     display: block !important; /* 🔥 강제 표시 */
-    position: static;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 28px;
+    pfont-size: 26px;
     z-index: 9999;
   }
 
