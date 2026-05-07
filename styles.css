@@ -46,6 +46,10 @@ button {
   font: inherit;
 }
 
+button:disabled {
+  cursor: not-allowed;
+}
+
 h1,
 h2,
 h3 {
@@ -185,6 +189,13 @@ footer {
 .button:hover,
 .lang-switch:hover {
   transform: translateY(-1px);
+}
+
+.header-cta,
+.button,
+.lang-switch,
+.carousel-btn {
+  transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
 }
 
 .hamburger {
@@ -736,6 +747,10 @@ details p {
   right: -14px;
 }
 
+.carousel-btn:disabled {
+  opacity: 0.45;
+}
+
 .email-link {
   color: #0d64d8;
   text-decoration: underline;
@@ -780,6 +795,29 @@ footer a:hover {
 .parallax {
   will-change: transform;
   transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .fade-in {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .parallax {
+    transform: none !important;
+  }
+
+  .header-cta,
+  .button,
+  .lang-switch,
+  .carousel-btn {
+    transition: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -828,6 +866,7 @@ footer a:hover {
   .hamburger {
     display: inline-flex;
     order: 4;
+    margin-left: auto;
   }
 
   .nav {
@@ -858,6 +897,14 @@ footer a:hover {
     min-height: 38px;
     padding: 0 14px;
     font-size: 0.82rem;
+  }
+
+  .header-cta {
+    order: 3;
+  }
+
+  .lang-switch {
+    order: 2;
   }
 
   .hero,
@@ -896,7 +943,7 @@ footer a:hover {
   }
 
   .brand span {
-    max-width: 148px;
+    max-width: 132px;
     font-size: 0.88rem;
     line-height: 1.15;
   }

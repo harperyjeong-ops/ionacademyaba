@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>i:ON Academy ABA</title>
+    <meta
+      name="description"
+      content="i:ON Academy ABA offers family-centered ABA therapy, caregiver training, school support, and parent resources in Carrollton, Texas."
+    />
     <link rel="preconnect" href="https://images.unsplash.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -91,6 +95,7 @@
           <img
             src="assets/summer2026/stepup2.png"
             alt="Step Up Summer Camp 2026 program poster"
+            loading="lazy"
           />
         </figure>
         <a
@@ -110,6 +115,7 @@
             alt="Therapist and clients speaking together outdoors"
             class="parallax"
             data-speed="0.12"
+            loading="lazy"
           />
         </figure>
         <div class="split-copy">
@@ -181,6 +187,7 @@
           alt="Children smiling together outdoors"
           class="parallax section-image"
           data-speed="0.1"
+          loading="lazy"
         />
       </section>
 
@@ -266,6 +273,7 @@
           alt="A family smiling outdoors together"
           class="parallax section-image"
           data-speed="0.1"
+          loading="lazy"
         />
       </section>
 
@@ -414,15 +422,15 @@
           <button class="carousel-btn prev" type="button" aria-label="Scroll resources left">‹</button>
           <div class="resource-carousel">
             <a class="resource-card" href="assets/pdf/en/guide1.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="assets/resource-pages/en/guide1.png" alt="Cover of the What is ABA? guide" />
+              <img src="assets/resource-pages/en/guide1.png" alt="Cover of the What is ABA? guide" loading="lazy" />
               <p class="resource-title">What is ABA?</p>
             </a>
             <a class="resource-card" href="assets/pdf/en/guide2.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="assets/resource-pages/en/guide2.png" alt="Cover of The i:ON Difference guide" />
+              <img src="assets/resource-pages/en/guide2.png" alt="Cover of The i:ON Difference guide" loading="lazy" />
               <p class="resource-title">The i:ON Difference</p>
             </a>
             <a class="resource-card" href="assets/pdf/en/guide3.pdf" target="_blank" rel="noopener noreferrer">
-              <img src="assets/resource-pages/en/guide3.png" alt="Cover of the i:ON flyer" />
+              <img src="assets/resource-pages/en/guide3.png" alt="Cover of the i:ON flyer" loading="lazy" />
               <p class="resource-title">i:ON Flyer</p>
             </a>
           </div>
@@ -447,83 +455,6 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const nav = document.querySelector(".nav");
-        const hamburger = document.querySelector(".hamburger");
-        const carousel = document.querySelector(".resource-carousel");
-        const prevBtn = document.querySelector(".carousel-btn.prev");
-        const nextBtn = document.querySelector(".carousel-btn.next");
-        const fadeTargets = document.querySelectorAll(".fade-in");
-        const parallaxTargets = document.querySelectorAll(".parallax");
-
-        hamburger?.addEventListener("click", () => {
-          const isOpen = nav?.classList.toggle("active");
-          hamburger.setAttribute("aria-expanded", String(Boolean(isOpen)));
-        });
-
-        document.addEventListener("click", (event) => {
-          if (!nav || !hamburger) return;
-          if (
-            nav.classList.contains("active") &&
-            !event.target.closest(".nav") &&
-            !event.target.closest(".hamburger")
-          ) {
-            nav.classList.remove("active");
-            hamburger.setAttribute("aria-expanded", "false");
-          }
-        });
-
-        document.addEventListener("keydown", (event) => {
-          if (event.key === "Escape" && nav?.classList.contains("active")) {
-            nav.classList.remove("active");
-            hamburger?.setAttribute("aria-expanded", "false");
-          }
-        });
-
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.classList.add("show");
-                observer.unobserve(entry.target);
-              }
-            });
-          },
-          { threshold: 0.18 }
-        );
-
-        fadeTargets.forEach((element) => observer.observe(element));
-
-        const scrollAmount = 320;
-        nextBtn?.addEventListener("click", () => {
-          carousel?.scrollBy({ left: scrollAmount, behavior: "smooth" });
-        });
-        prevBtn?.addEventListener("click", () => {
-          carousel?.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-        });
-
-        let ticking = false;
-        const updateParallax = () => {
-          parallaxTargets.forEach((element) => {
-            const speed = Number(element.dataset.speed || 0.1);
-            const offset = element.getBoundingClientRect().top * speed;
-            element.style.transform = `translateY(${offset}px)`;
-          });
-          ticking = false;
-        };
-
-        const requestParallax = () => {
-          if (!ticking) {
-            window.requestAnimationFrame(updateParallax);
-            ticking = true;
-          }
-        };
-
-        requestParallax();
-        window.addEventListener("scroll", requestParallax, { passive: true });
-        window.addEventListener("resize", requestParallax);
-      });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
