@@ -129,8 +129,11 @@ a {
   color: black;
   padding: 8px 16px;
   border-radius: 16px;
-  font-weight: 700;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.15;
   transition: all 0.3s ease; /* 🔥 부드럽게 변화 */
   font-weight: 600;
 }
@@ -962,9 +965,11 @@ footer p {
 
     width: calc(100% - 20px); /* 🔥 좌우 여백 */
     max-width: 100%;
+    height: auto;
+    min-height: 74px;
 
     gap: 10px;
-    padding: 8px 12px;
+    padding: 10px 12px;
   }
 
     .brand-logo {
@@ -973,11 +978,14 @@ footer p {
     }
 
     .brand {
-      flex: 1 1 auto;
+      flex: 1 1 0;
+      margin-right: 0;
     }
 
     .brand span {
       font-size: 0.86rem;
+      line-height: 1.12;
+      white-space: normal;
     }
     
 
@@ -1011,8 +1019,9 @@ footer p {
 
     .header-cta {
       font-size: 12px;
-      padding: 6px 10px;
-      white-space: nowrap;
+      min-height: 48px;
+      padding: 0 14px;
+      white-space: normal;
     }
     .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1033,9 +1042,11 @@ footer p {
 
     width: calc(100% - 20px); /* 🔥 좌우 여백 */
     max-width: 100%;
+    height: auto;
+    min-height: 74px;
 
     gap: 8px;
-    padding: 8px 12px;
+    padding: 10px 12px;
   }
      .brand-logo {
     height: 28px;   /* 🔥 핵심 */
@@ -1043,11 +1054,14 @@ footer p {
   }
 
      .brand {
-    flex: 1 1 auto;
+    flex: 1 1 0;
+    margin-right: 0;
   }
 
      .brand span {
     font-size: 0.84rem;
+    line-height: 1.12;
+    white-space: normal;
   }
 
      .lang-switch {
@@ -1100,8 +1114,9 @@ footer p {
 
     .header-cta {
     font-size: 12px;
-    padding: 6px 10px;
-    white-space: nowrap;
+    min-height: 48px;
+    padding: 0 14px;
+    white-space: normal;
   }
   .service-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1118,8 +1133,10 @@ footer p {
     transform: translateX(-50%);
     width: calc(100% - 10px); /* 🔥 좌우 여백 */
     max-width: 100%;
+    height: auto;
+    min-height: 72px;
     gap: 6px;
-    padding: 8px 12px;
+    padding: 10px 10px;
   }
 
     .brand-logo {
@@ -1128,12 +1145,15 @@ footer p {
     }
 
     .brand {
-      flex: 1 1 auto;
+      flex: 1 1 0;
       gap: 6px;
+      margin-right: 0;
     }
 
     .brand span {
       font-size: 0.78rem;
+      line-height: 1.12;
+      white-space: normal;
     }
     
 
@@ -1167,8 +1187,9 @@ footer p {
 
     .header-cta {
       font-size: 12px;
-      padding: 6px 10px;
-      white-space: nowrap;
+      min-height: 48px;
+      padding: 0 12px;
+      white-space: normal;
     }
     .service-grid {
     grid-template-columns: 1fr;
