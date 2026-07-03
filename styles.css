@@ -763,30 +763,64 @@ em {
 .accordion {
   max-width: 860px;
   margin: 0 auto;
-  padding: 24px;
-  background: var(--soft);
-  border-radius: 8px;
+  padding: clamp(28px, 5vw, 56px);
+  background: #fff;
+  border: 1px solid rgba(177, 159, 118, 0.28);
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 18px 50px rgba(47, 37, 0, 0.08);
+}
+
+.faq-category {
+  position: relative;
+  padding: 18px 0 34px clamp(28px, 4vw, 44px);
+}
+
+.faq-category + .faq-category {
+  margin-top: 2px;
+}
+
+.faq-category::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 34px;
+  left: 0;
+  width: 6px;
+  background: var(--green);
+}
+
+.faq-category h3,
+.faq-closing h3 {
+  margin: 0 0 18px;
+  color: var(--deep);
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.6rem, 2.6vw, 2.15rem);
+  line-height: 1.16;
 }
 
 details {
-  border-bottom: 1px solid #cfd6cf;
+  border-bottom: 1px solid rgba(177, 159, 118, 0.34);
 }
 
-details:last-child {
+.faq-category details:last-child {
   border-bottom: 0;
 }
 
 details[open] {
-  padding: 0 0 12px;
+  padding: 0 0 16px;
 }
 
 summary {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 62px;
-  padding: 0 4px;
+  gap: 24px;
+  min-height: 66px;
+  padding: 14px 0;
+  color: #252525;
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
   font-weight: 700;
+  line-height: 1.45;
   cursor: pointer;
   list-style: none;
 }
@@ -797,7 +831,11 @@ summary::-webkit-details-marker {
 
 summary::after {
   content: "+";
-  font-size: 1.2rem;
+  flex: 0 0 auto;
+  color: #166a5c;
+  font-size: clamp(1.35rem, 2vw, 1.6rem);
+  font-weight: 800;
+  line-height: 1;
 }
 
 details[open] summary::after {
@@ -805,11 +843,12 @@ details[open] summary::after {
 }
 
 details p {
-  max-width: 660px;
+  max-width: 720px;
   margin: 0;
-  padding: 0 4px 14px;
+  padding: 0 48px 16px 0;
   color: var(--muted);
-  line-height: 1.8;
+  font-size: 0.98rem;
+  line-height: 1.78;
 }
 
 .faq-list {
@@ -820,6 +859,22 @@ details p {
   padding: 0 4px 16px 24px;
   color: var(--muted);
   line-height: 1.7;
+}
+
+.faq-closing {
+  margin: 2px 0 0;
+  padding: clamp(32px, 5vw, 48px);
+  background: #fff;
+  border: 3px dashed var(--green);
+  border-radius: 18px;
+}
+
+.faq-closing p {
+  max-width: 660px;
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  line-height: 1.65;
 }
 
 .contact {
@@ -1544,12 +1599,13 @@ footer h3 {
 }
 
 footer a {
-display: block;
+  display: block;
   margin-top: 6px;
   text-decoration: none;
   color: var(--muted);
   font-size: clamp(0.92rem, 1.25vw, 1.08rem);
 }
+
 footer a:hover {
   color: var(--deep);
 }
@@ -1980,26 +2036,52 @@ footer p {
   }
      footer {
     grid-template-columns: 1fr;
-    flex-direction: column;
     align-items: center;
+    justify-items: center;
+    gap: 28px;
+    padding: 34px 22px 26px;
+    overflow: hidden;
     text-align: center;
   }
 
-     footer > div:last-child {
+     .footer-resources {
+    order: 1;
+    width: 100%;
+    justify-items: center;
     text-align: center;
   }
 
-     footer > div:first-child {
+     .footer-contact {
+    order: 2;
+    width: 100%;
+    justify-items: center;
+    margin-top: 0;
     text-align: center;
   }
 
      footer .social-links {
     position: static;
     justify-content: center;
+    margin: 4px 0 10px;
+  }
+
+     footer .social-links img {
+    width: 34px;
+    height: 34px;
+  }
+
+     footer h3 {
+    font-size: 1.08rem;
+  }
+
+     footer a,
+     footer p {
+    font-size: 0.95rem;
   }
 
      .footer-finale img {
-    width: min(360px, 82vw);
+    width: min(300px, 100%);
+    max-width: 100%;
   }
 
      .footer-resources,
@@ -2010,10 +2092,23 @@ footer p {
     grid-row: auto;
   }
 
-     .footer-contact {
-    margin-top: 0;
+     footer > .footer-finale {
+    order: 3;
+    width: 100%;
+    max-width: 100%;
+    align-self: center;
+    justify-items: center;
     text-align: center;
   }
+
+     .footer-copyright {
+    width: 100%;
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 0.68rem;
+    overflow-wrap: break-word;
+   }
 
     .header-cta {
     font-size: 12px;
