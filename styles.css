@@ -2454,6 +2454,11 @@ footer p {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
   }
+
+  .partners-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -2547,5 +2552,40 @@ footer p {
     width: 30px;
     height: 30px;
     font-size: 0.9rem;
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .partner-card {
+    min-height: 210px;
+  }
+
+  .band {
+    padding: 16px 8px 14px;
+  }
+
+  .band .eyebrow {
+    font-size: 0.55rem;
+    letter-spacing: 0.08em;
+  }
+
+  .pname {
+    font-size: clamp(0.82rem, 3.8vw, 1rem);
+    line-height: 1.14;
+  }
+
+  .partner-card .info {
+    padding: 12px 8px 14px;
+    font-size: 0.72rem;
+    line-height: 1.42;
+  }
+
+  .partner-card .contact-line {
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 0.68rem;
   }
 }
