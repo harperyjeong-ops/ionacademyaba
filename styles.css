@@ -1850,11 +1850,16 @@ footer p {
   max-width: 1000px;
   margin: 80px auto;
   padding: 0 40px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
 }
 .section-image {
   width: 100%;
   height: auto;
   border-radius: 12px;
+  display: block;
+  transform: none !important;
 }
 .email-link {
   color: #007BFF;
@@ -2519,6 +2524,15 @@ footer p {
   margin-right: auto;
   margin-left: auto;
   transform: none;
+}
+
+.site-header .lang-switch,
+.site-header .header-cta {
+  min-height: 36px;
+  padding: 0 16px;
+  border-radius: 16px;
+  font: 700 0.9rem/1 Inter, system-ui, sans-serif;
+  white-space: nowrap;
 }
 
 @media (max-width: 720px) {
