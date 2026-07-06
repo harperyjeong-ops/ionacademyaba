@@ -281,7 +281,36 @@ p,
 li,
 summary,
 a {
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+}
+
+h1,
+h2,
+h3,
+summary,
+.button,
+.header-cta,
+.lang-switch {
+  text-wrap: balance;
+}
+
+p,
+li {
+  text-wrap: pretty;
+}
+
+:lang(ko) h1,
+:lang(ko) h2,
+:lang(ko) h3,
+:lang(ko) p,
+:lang(ko) li,
+:lang(ko) summary,
+:lang(ko) a {
+  word-break: keep-all;
+  overflow-wrap: normal;
+  hyphens: none;
 }
 
 .intro {
@@ -2188,7 +2217,9 @@ footer p {
     margin-right: auto;
     margin-left: auto;
     font-size: 0.68rem;
-    overflow-wrap: break-word;
+    overflow-wrap: normal;
+    word-break: normal;
+    hyphens: none;
    }
 
     .header-cta {
