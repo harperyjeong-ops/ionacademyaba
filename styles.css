@@ -4228,3 +4228,294 @@ footer p {
     font-size: clamp(0.46rem, 2.45vw, 0.58rem);
   }
 }
+
+@media (max-width: 720px) {
+  .light-framework {
+    padding-top: 42px;
+    padding-bottom: 48px;
+  }
+
+  .light-framework h2 {
+    margin-bottom: 24px;
+    font-size: clamp(1.55rem, 6.2vw, 2.05rem);
+    line-height: 1;
+  }
+
+  .light-value-card {
+    min-height: 92px;
+    padding: 12px 4px 10px;
+  }
+
+  .light-letter {
+    margin-bottom: 6px;
+    font-size: clamp(1.65rem, 7.4vw, 2.05rem);
+  }
+
+  .light-value-card h3 {
+    margin-bottom: 5px;
+    font-size: clamp(0.6rem, 2.7vw, 0.78rem);
+    line-height: 1.05;
+  }
+
+  .light-value-card p:last-child {
+    font-size: clamp(0.46rem, 2.15vw, 0.58rem);
+    line-height: 1.28;
+  }
+
+  .partners-section {
+    padding: 28px 10px 42px;
+  }
+
+  .partners-heading {
+    margin-bottom: 18px;
+  }
+
+  .partners-grid {
+    gap: 8px;
+  }
+
+  .partners-section .partner-card {
+    min-height: 150px;
+    border-radius: 7px;
+  }
+
+  .partners-section .band {
+    gap: 3px;
+    padding: 9px 9px 8px;
+    text-align: left;
+  }
+
+  .partners-section .band .eyebrow {
+    align-self: start;
+    justify-self: start;
+    font-size: clamp(0.42rem, 1.9vw, 0.54rem);
+    letter-spacing: 0.12em;
+    text-align: left;
+  }
+
+  .partners-section .pname {
+    font-size: clamp(0.74rem, 3vw, 0.92rem);
+  }
+
+  .partners-section .body {
+    padding: 9px;
+  }
+
+  .partners-section .pdesc {
+    margin-bottom: 8px;
+    font-size: clamp(0.66rem, 2.7vw, 0.82rem);
+    line-height: 1.34;
+  }
+
+  .partners-section .foot {
+    gap: 6px;
+    padding-top: 8px;
+    font-size: clamp(0.54rem, 2.3vw, 0.66rem);
+    line-height: 1.2;
+  }
+
+  .partners-section .visit {
+    font-size: inherit;
+  }
+
+  .faq {
+    margin: 46px auto;
+    padding: 0 10px;
+  }
+
+  .faq h2 {
+    margin-bottom: 20px;
+  }
+
+  .accordion {
+    padding: 16px 14px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .faq-category {
+    padding: 10px 0 18px 18px;
+  }
+
+  .faq-category::before {
+    top: 10px;
+    bottom: 18px;
+    width: 4px;
+  }
+
+  .faq-category h3,
+  .faq-closing h3 {
+    margin-bottom: 10px;
+    font-size: clamp(1rem, 4vw, 1.22rem);
+  }
+
+  summary {
+    gap: 12px;
+    min-height: 44px;
+    padding: 8px 0;
+    font-size: clamp(0.72rem, 3vw, 0.86rem);
+    line-height: 1.32;
+  }
+
+  summary::after {
+    font-size: clamp(1rem, 4vw, 1.2rem);
+  }
+
+  details[open] {
+    padding-bottom: 8px;
+  }
+
+  details p {
+    padding: 0 24px 10px 0;
+    font-size: clamp(0.66rem, 2.8vw, 0.8rem);
+    line-height: 1.48;
+  }
+
+  .faq-list {
+    gap: 5px;
+    padding: 0 4px 10px 18px;
+    font-size: clamp(0.66rem, 2.8vw, 0.8rem);
+    line-height: 1.44;
+  }
+
+  .faq-closing {
+    padding: 18px 16px;
+    border-radius: 10px;
+  }
+
+  .faq-closing p {
+    font-size: clamp(0.72rem, 3vw, 0.86rem);
+  }
+
+  .family-topic-link-wide {
+    min-height: 38px;
+    padding: 0 14px;
+    font-size: clamp(0.62rem, 2.7vw, 0.78rem);
+    line-height: 1.15;
+  }
+}
+
+@media (max-width: 520px) {
+  .light-framework {
+    padding-top: 34px;
+    padding-bottom: 40px;
+  }
+
+  .light-framework h2 {
+    margin-bottom: 18px;
+    font-size: clamp(1.18rem, 5.7vw, 1.52rem);
+  }
+
+  .light-value-card {
+    min-height: 80px;
+    padding: 10px 2px 8px;
+  }
+
+  .light-letter {
+    margin-bottom: 5px;
+    font-size: clamp(1.32rem, 7vw, 1.72rem);
+  }
+
+  .light-value-card h3 {
+    margin-bottom: 4px;
+    font-size: clamp(0.48rem, 2.55vw, 0.64rem);
+  }
+
+  .light-value-card p:last-child {
+    font-size: clamp(0.36rem, 2vw, 0.48rem);
+    line-height: 1.22;
+  }
+
+  .partners-section {
+    padding: 22px 8px 34px;
+  }
+
+  .partners-heading {
+    margin-bottom: 14px;
+  }
+
+  .partners-grid {
+    gap: 6px;
+  }
+
+  .partners-section .partner-card {
+    min-height: 124px;
+  }
+
+  .partners-section .band {
+    padding: 7px 7px 6px;
+  }
+
+  .partners-section .band .eyebrow {
+    font-size: clamp(0.34rem, 1.85vw, 0.46rem);
+    letter-spacing: 0.1em;
+  }
+
+  .partners-section .pname {
+    font-size: clamp(0.62rem, 3.05vw, 0.78rem);
+  }
+
+  .partners-section .body {
+    padding: 7px;
+  }
+
+  .partners-section .pdesc {
+    margin-bottom: 6px;
+    font-size: clamp(0.56rem, 2.7vw, 0.7rem);
+    line-height: 1.28;
+  }
+
+  .partners-section .foot {
+    gap: 4px;
+    padding-top: 6px;
+    font-size: clamp(0.46rem, 2.35vw, 0.58rem);
+  }
+
+  .faq {
+    margin: 36px auto;
+    padding: 0 8px;
+  }
+
+  .accordion {
+    padding: 12px 10px;
+  }
+
+  .faq-category {
+    padding: 8px 0 14px 14px;
+  }
+
+  .faq-category::before {
+    top: 8px;
+    bottom: 14px;
+    width: 3px;
+  }
+
+  .faq-category h3,
+  .faq-closing h3 {
+    font-size: clamp(0.84rem, 4.2vw, 1.05rem);
+  }
+
+  summary {
+    min-height: 38px;
+    padding: 6px 0;
+    font-size: clamp(0.62rem, 3.1vw, 0.76rem);
+  }
+
+  details p,
+  .faq-list {
+    font-size: clamp(0.56rem, 2.9vw, 0.68rem);
+  }
+
+  .faq-closing {
+    padding: 14px 12px;
+  }
+
+  .faq-closing p {
+    font-size: clamp(0.62rem, 3vw, 0.76rem);
+  }
+
+  .family-topic-link-wide {
+    min-height: 32px;
+    padding: 0 10px;
+    font-size: clamp(0.5rem, 2.8vw, 0.62rem);
+  }
+}
