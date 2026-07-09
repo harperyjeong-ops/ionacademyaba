@@ -52,7 +52,7 @@
         />
         <div class="hero-copy">
           <p>Accessible support, wherever you are</p>
-          <h1 id="hero-title">Lighting Up Every Child&rsquo;s Potential</h1>
+          <h1 id="hero-title">Lighting Up<br />Every Child&rsquo;s<br />Potential</h1>
           <a
             class="button light hero-cta"
             href="https://docs.google.com/forms/d/e/1FAIpQLSflN78NAI327tLRnySt_xbOaprF9NbbIA9tcFPK0c57y0Qo8Q/viewform?usp=header"
@@ -124,54 +124,52 @@
 <section class="light-framework" id="light-framework" aria-labelledby="light-framework-title">
   <div class="light-framework-inner">
     <h2 id="light-framework-title">i:ON&rsquo;s <span class="light-title-word"><span class="light-title-l">L</span><span class="light-title-dot">&bull;</span><span class="light-title-i">I</span><span class="light-title-dot">&bull;</span><span class="light-title-g">G</span><span class="light-title-dot">&bull;</span><span class="light-title-h">H</span><span class="light-title-dot">&bull;</span><span class="light-title-t">T</span></span> Framework</h2>
+    <p class="light-wheel-prompt">Tap each letter to explore.</p>
 
-    <div class="light-values" aria-label="The LIGHT Framework core values">
-      <article class="light-value-card light-learning">
-        <p class="light-letter">L</p>
-        <h3>Learning</h3>
-        <p>
-          We are lifelong learners. Every interaction is a chance to grow
-          for children, families, and ourselves.
-        </p>
-      </article>
+    <div class="light-wheel-stage">
+      <svg class="light-wheel" viewBox="-10 -10 420 420" role="img" aria-label="A five-part LIGHT Framework wheel with JOY at the center">
+        <defs>
+          <radialGradient id="light-wheel-joy-gradient" cx="42%" cy="34%" r="72%">
+            <stop offset="0%" stop-color="#fff8ca"></stop>
+            <stop offset="48%" stop-color="#ffe58a"></stop>
+            <stop offset="100%" stop-color="#efbd2e"></stop>
+          </radialGradient>
+        </defs>
+        <g class="light-wheel-segments">
+          <path class="light-wheel-segment wheel-integrity" data-light-index="1" tabindex="0" role="button" aria-label="Integrity" d="M 200 20 A 180 180 0 0 1 371.19 144.38 L 268.48 177.75 A 72 72 0 0 0 200 128 Z"></path>
+          <path class="light-wheel-segment wheel-grace" data-light-index="2" tabindex="0" role="button" aria-label="Grace" d="M 371.19 144.38 A 180 180 0 0 1 305.80 345.62 L 242.32 258.25 A 72 72 0 0 0 268.48 177.75 Z"></path>
+          <path class="light-wheel-segment wheel-hope" data-light-index="3" tabindex="0" role="button" aria-label="Hope" d="M 305.80 345.62 A 180 180 0 0 1 94.20 345.62 L 157.68 258.25 A 72 72 0 0 0 242.32 258.25 Z"></path>
+          <path class="light-wheel-segment wheel-trust" data-light-index="4" tabindex="0" role="button" aria-label="Trust" d="M 94.20 345.62 A 180 180 0 0 1 28.81 144.38 L 131.52 177.75 A 72 72 0 0 0 157.68 258.25 Z"></path>
+          <path class="light-wheel-segment wheel-learning is-active" data-light-index="0" tabindex="0" role="button" aria-label="Learning" d="M 28.81 144.38 A 180 180 0 0 1 200 20 L 200 128 A 72 72 0 0 0 131.52 177.75 Z"></path>
+        </g>
 
-      <article class="light-value-card light-integrity">
-        <p class="light-letter">I</p>
-        <h3>Integrity</h3>
-        <p>
-          We act with honesty and respect. Guided by assent based care, we honor
-          every child&rsquo;s voice and dignity.
-        </p>
-      </article>
+        <circle class="light-wheel-joy-ring" cx="200" cy="200" r="72"></circle>
+        <text class="light-wheel-joy-text" x="200" y="202">JOY</text>
 
-      <article class="light-value-card light-grace">
-        <p class="light-letter">G</p>
-        <h3>Grace</h3>
-        <p>
-          Progress over perfection. We extend grace while still holding high
-          expectations.
-        </p>
-      </article>
-
-      <article class="light-value-card light-hope">
-        <p class="light-letter">H</p>
-        <h3>Hope</h3>
-        <p>
-          Hope fuels progress. We help families see possibilities beyond
-          today&rsquo;s challenges.
-        </p>
-      </article>
-
-      <article class="light-value-card light-trust">
-        <p class="light-letter">T</p>
-        <h3>Trust</h3>
-        <p>
-          Earned through consistency, accountability, and genuine partnership
-          with children and families first.
-        </p>
-      </article>
+        <g class="light-wheel-labels">
+          <text class="light-wheel-letter wheel-text-integrity" x="279" y="84">I</text>
+          <text class="light-wheel-name" x="279" y="106">Integrity</text>
+          <text class="light-wheel-letter wheel-text-grace" x="328" y="236">G</text>
+          <text class="light-wheel-name" x="328" y="258">Grace</text>
+          <text class="light-wheel-letter wheel-text-hope" x="200" y="329">H</text>
+          <text class="light-wheel-name" x="200" y="351">Hope</text>
+          <text class="light-wheel-letter wheel-text-trust" x="72" y="236">T</text>
+          <text class="light-wheel-name" x="72" y="258">Trust</text>
+          <text class="light-wheel-letter wheel-text-learning" x="121" y="84">L</text>
+          <text class="light-wheel-name" x="121" y="106">Learning</text>
+        </g>
+      </svg>
     </div>
 
+    <div class="light-wheel-detail" aria-live="polite">
+      <div class="light-wheel-badge wheel-text-learning">
+        <span class="light-wheel-badge-letter">L</span><span class="light-wheel-badge-rest">earning</span>
+      </div>
+      <p class="light-wheel-desc-text">
+        We are lifelong learners. Every interaction is a chance to grow for
+        children, families, and ourselves.
+      </p>
+    </div>
     <div class="light-joy">
       <p>
         At the center of <span class="light-inline-word">L<span class="light-title-dot">&bull;</span>I<span class="light-title-dot">&bull;</span>G<span class="light-title-dot">&bull;</span>H<span class="light-title-dot">&bull;</span>T</span> is <strong class="joy-highlight">JOY</strong>,<br />
@@ -192,9 +190,10 @@
       <li>
         <span class="choice-icon" aria-hidden="true">◎</span>
         <span>
-          <strong>BCBA-Owned. Family-Focused.</strong>
-          Clinical decisions are led by experienced BCBAs who prioritize quality
-          care, ethical practice, and meaningful outcomes for every family.
+          <strong>BCBA-Owned.</strong>
+          We intentionally maintain small BCBA caseloads so every child receives
+          personalized attention, thoughtful clinical decisions, and ethical,
+          high-quality care.
         </span>
       </li>
       <li>
@@ -202,32 +201,32 @@
         <span>
           <strong>Individualized Care</strong>
           Every treatment plan is tailored to your child&rsquo;s strengths, needs,
-          and your family&rsquo;s goals.
+          interests, and your family&rsquo;s goals, not a one-size-fits-all program.
         </span>
       </li>
       <li>
         <span class="choice-icon" aria-hidden="true">✦</span>
         <span>
-          <strong>Meaningful Skills for Everyday Life</strong>
-          We teach meaningful behaviors that help children become more independent,
-          communicate effectively, build relationships, and confidently navigate
-          everyday life.
+          <strong>Skills That Matter Most</strong>
+          We prioritize socially meaningful skills that improve communication,
+          independence, relationships, and success at home, school, and in the
+          community.
         </span>
       </li>
       <li>
         <span class="choice-icon" aria-hidden="true">∞</span>
         <span>
           <strong>Parent Partnership</strong>
-          We provide ongoing coaching, communication, and support so families feel
-          confident every step of the way.
+          We work alongside families through ongoing coaching, open communication,
+          and practical strategies that support progress beyond therapy sessions.
         </span>
       </li>
       <li>
         <span class="choice-icon" aria-hidden="true">♡</span>
         <span>
           <strong>Compassionate, Evidence-Based Care</strong>
-          We combine proven, evidence-based practices with respectful, engaging,
-          and child-centered therapy.
+          We combine research-backed practices with child-led, engaging therapy
+          that respects every child&rsquo;s strengths, voice, and individuality.
         </span>
       </li>
     </ul>
@@ -759,7 +758,7 @@
         </div>
 
         <div class="partners-grid" aria-label="Community partner organizations">
-          <article class="partner-card card">
+          <a class="partner-card card" href="https://www.straypointart.com/" target="_blank" rel="noopener noreferrer">
             <div class="band">
               <div class="eyebrow">Art</div>
               <div class="pname">Stray Point Art Academy</div>
@@ -772,12 +771,12 @@
               </p>
               <div class="foot">
                 <span class="loc"><span class="dot"></span>Dallas-Fort Worth</span>
-                <a class="visit" href="https://www.straypointart.com/" target="_blank" rel="noopener noreferrer">Visit</a>
+                <span class="visit">Visit</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="partner-card card">
+          <a class="partner-card card" href="https://brightmindskid.com/" target="_blank" rel="noopener noreferrer">
             <div class="band">
               <div class="eyebrow">Preschool Partner</div>
               <div class="pname">Bright Minds Preschool</div>
@@ -790,12 +789,12 @@
               </p>
               <div class="foot">
                 <span class="loc"><span class="dot"></span>Lewisville, TX</span>
-                <a class="visit" href="https://brightmindskid.com/" target="_blank" rel="noopener noreferrer">Visit</a>
+                <span class="visit">Visit</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="partner-card card">
+          <a class="partner-card card" href="https://www.sunnyhillpediatrics.com/" target="_blank" rel="noopener noreferrer">
             <div class="band">
               <div class="eyebrow">Pediatrics/Diagnosis</div>
               <div class="pname">Sunny Hill Pediatrics: Min Jung, MD</div>
@@ -807,12 +806,12 @@
               </p>
               <div class="foot">
                 <span class="loc"><span class="dot"></span>Pediatrics Office</span>
-                <a class="visit" href="https://www.sunnyhillpediatrics.com/" target="_blank" rel="noopener noreferrer">Visit</a>
+                <span class="visit">Visit</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="partner-card card">
+          <a class="partner-card card" href="https://special-ed-advocate-frisco.com/" target="_blank" rel="noopener noreferrer">
             <div class="band">
               <div class="eyebrow">Special Education Advocate</div>
               <div class="pname">Dr. Tammy</div>
@@ -824,12 +823,12 @@
               </p>
               <div class="foot">
                 <span class="loc"><span class="dot"></span>Across the country</span>
-                <a class="visit" href="https://special-ed-advocate-frisco.com/" target="_blank" rel="noopener noreferrer">Visit</a>
+                <span class="visit">Visit</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="partner-card card">
+          <a class="partner-card card" href="https://www.psychologytoday.com/us/therapists/jennifer-y-namkoong-bright-path-counseling-pllc-frisco-tx/202977" target="_blank" rel="noopener noreferrer">
             <div class="band">
               <div class="eyebrow">Counseling</div>
               <div class="pname">Jennifer Y. Namkoong, LPC</div>
@@ -841,12 +840,12 @@
               </p>
               <div class="foot">
                 <span class="loc"><span class="dot"></span>Telehealth</span>
-                <a class="visit" href="https://www.psychologytoday.com/us/therapists/jennifer-y-namkoong-bright-path-counseling-pllc-frisco-tx/202977" target="_blank" rel="noopener noreferrer">Visit</a>
+                <span class="visit">Visit</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="partner-card card">
+          <a class="partner-card card" href="https://www.littleexplorers-therapy.com/" target="_blank" rel="noopener noreferrer">
             <div class="band">
               <div class="eyebrow">OT &amp; PT</div>
               <div class="pname">Little Explorers Therapy</div>
@@ -858,12 +857,12 @@
               </p>
               <div class="foot">
                 <span class="loc"><span class="dot"></span>Rockwall, TX + traveling across DFW</span>
-                <a class="visit" href="https://www.littleexplorers-therapy.com/" target="_blank" rel="noopener noreferrer">Visit</a>
+                <span class="visit">Visit</span>
               </div>
             </div>
-          </article>
+          </a>
 
-          <article class="partner-card card">
+          <a class="partner-card card" href="https://spectrumhub.info/" target="_blank" rel="noopener noreferrer">
             <div class="band">
               <div class="eyebrow">Clinical Partnership</div>
               <div class="pname">Spectrum Hub</div>
@@ -875,10 +874,10 @@
               </p>
               <div class="foot">
                 <span class="loc"><span class="dot"></span>Professional Support</span>
-                <a class="visit" href="https://spectrumhub.info/" target="_blank" rel="noopener noreferrer">Visit</a>
+                <span class="visit">Visit</span>
               </div>
             </div>
-          </article>
+          </a>
         </div>
       </section>
 
@@ -1057,10 +1056,10 @@ window.addEventListener('scroll', function () {
   }
 </script>
 
-<script>
-  const lightFramework = document.querySelector('.light-framework');
+	<script>
+	  const lightFramework = document.querySelector('.light-framework');
 
-  if (lightFramework) {
+	  if (lightFramework) {
     const lightFrameworkObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -1075,12 +1074,80 @@ window.addEventListener('scroll', function () {
       threshold: 0.28
     });
 
-    lightFrameworkObserver.observe(lightFramework);
-  }
-</script>
+	    lightFrameworkObserver.observe(lightFramework);
+	  }
+	</script>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
+	<script>
+	  const lightValues = [
+	    {
+	      letter: 'L',
+	      rest: 'earning',
+	      className: 'wheel-text-learning',
+	      description: 'We are lifelong learners. Every interaction is a chance to grow for children, families, and ourselves.'
+	    },
+	    {
+	      letter: 'I',
+	      rest: 'ntegrity',
+	      className: 'wheel-text-integrity',
+	      description: 'We act with honesty and respect. Guided by assent based care, we honor every child’s voice and dignity.'
+	    },
+	    {
+	      letter: 'G',
+	      rest: 'race',
+	      className: 'wheel-text-grace',
+	      description: 'Progress over perfection. We extend grace while still holding high expectations.'
+	    },
+	    {
+	      letter: 'H',
+	      rest: 'ope',
+	      className: 'wheel-text-hope',
+	      description: 'Hope fuels progress. We help families see possibilities beyond today’s challenges.'
+	    },
+	    {
+	      letter: 'T',
+	      rest: 'rust',
+	      className: 'wheel-text-trust',
+	      description: 'Earned through consistency, accountability, and genuine partnership with children and families first.'
+	    }
+	  ];
+
+	  const lightSegments = document.querySelectorAll('.light-wheel-segment');
+	  const lightBadge = document.querySelector('.light-wheel-badge');
+	  const lightBadgeLetter = document.querySelector('.light-wheel-badge-letter');
+	  const lightBadgeRest = document.querySelector('.light-wheel-badge-rest');
+	  const lightDescription = document.querySelector('.light-wheel-desc-text');
+
+	  function selectLightValue(index) {
+	    const value = lightValues[index];
+	    if (!value || !lightBadge || !lightBadgeLetter || !lightBadgeRest || !lightDescription) return;
+
+	    lightSegments.forEach((segment) => {
+	      segment.classList.toggle('is-active', segment.dataset.lightIndex === String(index));
+	    });
+
+	    lightBadge.className = `light-wheel-badge ${value.className}`;
+	    lightBadgeLetter.textContent = value.letter;
+	    lightBadgeRest.textContent = value.rest;
+	    lightDescription.textContent = value.description;
+	  }
+
+	  lightSegments.forEach((segment) => {
+	    segment.addEventListener('click', () => {
+	      selectLightValue(Number(segment.dataset.lightIndex));
+	    });
+
+	    segment.addEventListener('keydown', (event) => {
+	      if (event.key === 'Enter' || event.key === ' ') {
+	        event.preventDefault();
+	        selectLightValue(Number(segment.dataset.lightIndex));
+	      }
+	    });
+	  });
+	</script>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function () {
   const pronunciationButton = document.querySelector(".pronunciation-note");
 
   pronunciationButton?.addEventListener("click", function () {
