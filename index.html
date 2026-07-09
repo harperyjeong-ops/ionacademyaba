@@ -127,91 +127,109 @@
     <p class="light-wheel-prompt">Tap each letter to explore.</p>
 
     <div class="light-wheel-stage">
-      <svg class="light-wheel" viewBox="-10 -10 420 420" role="img" aria-label="A five-part LIGHT Framework wheel with JOY at the center">
-        <defs>
-          <radialGradient id="light-wheel-joy-gradient" cx="42%" cy="34%" r="72%">
-            <stop offset="0%" stop-color="#fff8ca"></stop>
-            <stop offset="48%" stop-color="#ffe58a"></stop>
-            <stop offset="100%" stop-color="#efbd2e"></stop>
-          </radialGradient>
-        </defs>
-        <g class="light-wheel-segments">
-          <path class="light-wheel-segment wheel-integrity" data-light-index="1" tabindex="0" role="button" aria-label="Integrity" aria-pressed="false" d="M 200 20 A 180 180 0 0 1 371.19 144.38 L 268.48 177.75 A 72 72 0 0 0 200 128 Z"></path>
-          <path class="light-wheel-segment wheel-grace" data-light-index="2" tabindex="0" role="button" aria-label="Grace" aria-pressed="false" d="M 371.19 144.38 A 180 180 0 0 1 305.80 345.62 L 242.32 258.25 A 72 72 0 0 0 268.48 177.75 Z"></path>
-          <path class="light-wheel-segment wheel-hope" data-light-index="3" tabindex="0" role="button" aria-label="Hope" aria-pressed="false" d="M 305.80 345.62 A 180 180 0 0 1 94.20 345.62 L 157.68 258.25 A 72 72 0 0 0 242.32 258.25 Z"></path>
-          <path class="light-wheel-segment wheel-trust" data-light-index="4" tabindex="0" role="button" aria-label="Trust" aria-pressed="false" d="M 94.20 345.62 A 180 180 0 0 1 28.81 144.38 L 131.52 177.75 A 72 72 0 0 0 157.68 258.25 Z"></path>
-          <path class="light-wheel-segment wheel-learning" data-light-index="0" tabindex="0" role="button" aria-label="Learning" aria-pressed="false" d="M 28.81 144.38 A 180 180 0 0 1 200 20 L 200 128 A 72 72 0 0 0 131.52 177.75 Z"></path>
-        </g>
+      <div class="light-wheel" role="group" aria-label="A five-part LIGHT Framework wheel with JOY at the center">
+        <div class="light-wheel-segment wheel-learning" data-light-index="0" tabindex="0" role="button" aria-label="Learning" aria-pressed="false">
+          <div class="light-wheel-face light-wheel-face-front">
+            <div class="light-wheel-content">
+              <span class="light-wheel-letter wheel-text-learning">L</span>
+              <span class="light-wheel-name">Learning</span>
+            </div>
+          </div>
+          <div class="light-wheel-face light-wheel-face-back">
+            <div class="light-wheel-content light-wheel-content-wide">
+              <span class="light-wheel-desc-title wheel-text-learning">Learning</span>
+              <span class="light-wheel-desc-copy">
+                <span>Every interaction</span>
+                <span>is a chance</span>
+                <span>for children and</span>
+                <span>families to grow.</span>
+              </span>
+            </div>
+          </div>
+        </div>
 
-        <circle class="light-wheel-joy-ring" cx="200" cy="200" r="72"></circle>
-        <text class="light-wheel-joy-text" x="200" y="202">JOY</text>
+        <div class="light-wheel-segment wheel-integrity" data-light-index="1" tabindex="0" role="button" aria-label="Integrity" aria-pressed="false">
+          <div class="light-wheel-face light-wheel-face-front">
+            <div class="light-wheel-content">
+              <span class="light-wheel-letter wheel-text-integrity">I</span>
+              <span class="light-wheel-name">Integrity</span>
+            </div>
+          </div>
+          <div class="light-wheel-face light-wheel-face-back">
+            <div class="light-wheel-content light-wheel-content-wide">
+              <span class="light-wheel-desc-title wheel-text-integrity">Integrity</span>
+              <span class="light-wheel-desc-copy">
+                <span>Honesty and</span>
+                <span>respect guide</span>
+                <span>assent-based care</span>
+                <span>and dignity.</span>
+              </span>
+            </div>
+          </div>
+        </div>
 
-        <g class="light-wheel-labels" aria-hidden="true">
-          <g class="light-wheel-label-set" data-light-index="1">
-            <text class="light-wheel-letter wheel-text-integrity" x="279" y="84">I</text>
-            <text class="light-wheel-name" x="279" y="106">Integrity</text>
-          </g>
-          <g class="light-wheel-label-set" data-light-index="2">
-            <text class="light-wheel-letter wheel-text-grace" x="328" y="236">G</text>
-            <text class="light-wheel-name" x="328" y="258">Grace</text>
-          </g>
-          <g class="light-wheel-label-set" data-light-index="3">
-            <text class="light-wheel-letter wheel-text-hope" x="200" y="329">H</text>
-            <text class="light-wheel-name" x="200" y="351">Hope</text>
-          </g>
-          <g class="light-wheel-label-set" data-light-index="4">
-            <text class="light-wheel-letter wheel-text-trust" x="72" y="236">T</text>
-            <text class="light-wheel-name" x="72" y="258">Trust</text>
-          </g>
-          <g class="light-wheel-label-set" data-light-index="0">
-            <text class="light-wheel-letter wheel-text-learning" x="121" y="84">L</text>
-            <text class="light-wheel-name" x="121" y="106">Learning</text>
-          </g>
-        </g>
+        <div class="light-wheel-segment wheel-grace" data-light-index="2" tabindex="0" role="button" aria-label="Grace" aria-pressed="false">
+          <div class="light-wheel-face light-wheel-face-front">
+            <div class="light-wheel-content">
+              <span class="light-wheel-letter wheel-text-grace">G</span>
+              <span class="light-wheel-name">Grace</span>
+            </div>
+          </div>
+          <div class="light-wheel-face light-wheel-face-back">
+            <div class="light-wheel-content light-wheel-content-wide">
+              <span class="light-wheel-desc-title wheel-text-grace">Grace</span>
+              <span class="light-wheel-desc-copy">
+                <span>Progress over</span>
+                <span>perfection, with</span>
+                <span>patience and high</span>
+                <span>expectations.</span>
+              </span>
+            </div>
+          </div>
+        </div>
 
-        <g class="light-wheel-descriptions" aria-hidden="true">
-          <g class="light-wheel-desc-set" data-light-index="1">
-            <text class="light-wheel-desc-title wheel-text-integrity" x="279" y="70">Integrity</text>
-            <text class="light-wheel-desc-copy" x="279" y="91">
-              <tspan x="279" dy="0">Honesty, respect,</tspan>
-              <tspan x="279" dy="13">and every child&rsquo;s</tspan>
-              <tspan x="279" dy="13">voice.</tspan>
-            </text>
-          </g>
-          <g class="light-wheel-desc-set" data-light-index="2">
-            <text class="light-wheel-desc-title wheel-text-grace" x="328" y="213">Grace</text>
-            <text class="light-wheel-desc-copy" x="328" y="234">
-              <tspan x="328" dy="0">Progress over</tspan>
-              <tspan x="328" dy="13">perfection with</tspan>
-              <tspan x="328" dy="13">high expectations.</tspan>
-            </text>
-          </g>
-          <g class="light-wheel-desc-set" data-light-index="3">
-            <text class="light-wheel-desc-title wheel-text-hope" x="200" y="304">Hope</text>
-            <text class="light-wheel-desc-copy" x="200" y="325">
-              <tspan x="200" dy="0">Possibilities</tspan>
-              <tspan x="200" dy="13">beyond today&rsquo;s</tspan>
-              <tspan x="200" dy="13">challenges.</tspan>
-            </text>
-          </g>
-          <g class="light-wheel-desc-set" data-light-index="4">
-            <text class="light-wheel-desc-title wheel-text-trust" x="72" y="213">Trust</text>
-            <text class="light-wheel-desc-copy" x="72" y="234">
-              <tspan x="72" dy="0">Consistency,</tspan>
-              <tspan x="72" dy="13">accountability,</tspan>
-              <tspan x="72" dy="13">partnership.</tspan>
-            </text>
-          </g>
-          <g class="light-wheel-desc-set" data-light-index="0">
-            <text class="light-wheel-desc-title wheel-text-learning" x="121" y="70">Learning</text>
-            <text class="light-wheel-desc-copy" x="121" y="91">
-              <tspan x="121" dy="0">Every interaction</tspan>
-              <tspan x="121" dy="13">is a chance</tspan>
-              <tspan x="121" dy="13">to grow.</tspan>
-            </text>
-          </g>
-        </g>
-      </svg>
+        <div class="light-wheel-segment wheel-hope" data-light-index="3" tabindex="0" role="button" aria-label="Hope" aria-pressed="false">
+          <div class="light-wheel-face light-wheel-face-front">
+            <div class="light-wheel-content">
+              <span class="light-wheel-letter wheel-text-hope">H</span>
+              <span class="light-wheel-name">Hope</span>
+            </div>
+          </div>
+          <div class="light-wheel-face light-wheel-face-back">
+            <div class="light-wheel-content light-wheel-content-wide">
+              <span class="light-wheel-desc-title wheel-text-hope">Hope</span>
+              <span class="light-wheel-desc-copy">
+                <span>Hope helps</span>
+                <span>families see</span>
+                <span>possibilities past</span>
+                <span>today&rsquo;s challenge.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="light-wheel-segment wheel-trust" data-light-index="4" tabindex="0" role="button" aria-label="Trust" aria-pressed="false">
+          <div class="light-wheel-face light-wheel-face-front">
+            <div class="light-wheel-content">
+              <span class="light-wheel-letter wheel-text-trust">T</span>
+              <span class="light-wheel-name">Trust</span>
+            </div>
+          </div>
+          <div class="light-wheel-face light-wheel-face-back">
+            <div class="light-wheel-content light-wheel-content-wide">
+              <span class="light-wheel-desc-title wheel-text-trust">Trust</span>
+              <span class="light-wheel-desc-copy">
+                <span>Consistency,</span>
+                <span>accountability,</span>
+                <span>and genuine</span>
+                <span>partnership.</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="light-wheel-joy-ring" aria-hidden="true"><span>JOY</span></div>
+      </div>
     </div>
     <div class="light-joy">
       <p>
@@ -928,14 +946,14 @@
         <div class="contact-copy">
           <img class="contact-mascot" src="assets/animals/luna-sleeping.png" alt="Reign, Luna, and Gus walking together" />
           <h2 id="contact-title">What&rsquo;s Next?</h2>
-          <p>Let&rsquo;s Get Started.<br />We&rsquo;re here to support your child&rsquo;s growth.</p>
+          <p><strong>Take the First Step.</strong><br />Schedule a free consultation and let&rsquo;s explore how we can support your child&rsquo;s growth.</p>
           <a
             class="button yellow contact-cta"
             href="https://docs.google.com/forms/d/e/1FAIpQLSflN78NAI327tLRnySt_xbOaprF9NbbIA9tcFPK0c57y0Qo8Q/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Let&rsquo;s Talk!<br />Book a Free Consultation
+            Let&rsquo;s Talk! Book a Free Consultation
           </a>
         </div>
       </section>
@@ -1116,72 +1134,18 @@ window.addEventListener('scroll', function () {
 </script>
 
 	<script>
-	  const lightFramework = document.querySelector('.light-framework');
-
-	  if (lightFramework) {
-    const lightFrameworkObserver = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.remove('light-in-view');
-          void entry.target.offsetWidth;
-          entry.target.classList.add('light-in-view');
-        } else {
-          entry.target.classList.remove('light-in-view');
-        }
-      });
-    }, {
-      threshold: 0.28
-    });
-
-	    lightFrameworkObserver.observe(lightFramework);
-	  }
-	</script>
-
-	<script>
-	  const lightValues = [
-	    {
-	      letter: 'L',
-	      rest: 'earning',
-	      className: 'wheel-text-learning',
-	      description: 'We are lifelong learners. Every interaction is a chance to grow for children, families, and ourselves.'
-	    },
-	    {
-	      letter: 'I',
-	      rest: 'ntegrity',
-	      className: 'wheel-text-integrity',
-	      description: 'We act with honesty and respect. Guided by assent based care, we honor every child’s voice and dignity.'
-	    },
-	    {
-	      letter: 'G',
-	      rest: 'race',
-	      className: 'wheel-text-grace',
-	      description: 'Progress over perfection. We extend grace while still holding high expectations.'
-	    },
-	    {
-	      letter: 'H',
-	      rest: 'ope',
-	      className: 'wheel-text-hope',
-	      description: 'Hope fuels progress. We help families see possibilities beyond today’s challenges.'
-	    },
-	    {
-	      letter: 'T',
-	      rest: 'rust',
-	      className: 'wheel-text-trust',
-	      description: 'Earned through consistency, accountability, and genuine partnership with children and families first.'
-	    }
-	  ];
-
 	  const lightSegments = document.querySelectorAll('.light-wheel-segment');
-	  const lightLabelSets = document.querySelectorAll('.light-wheel-label-set');
-	  const lightDescSets = document.querySelectorAll('.light-wheel-desc-set');
+	  let activeLightIndex = null;
 
 	  function selectLightValue(index) {
-	    const value = lightValues[index];
-	    if (!value) return;
 	    const activeIndex = String(index);
+	    const hasSegment = Array.from(lightSegments).some((segment) => segment.dataset.lightIndex === activeIndex);
+	    if (!hasSegment) return;
+	    const shouldClose = activeLightIndex === activeIndex;
+	    activeLightIndex = shouldClose ? null : activeIndex;
 
 	    lightSegments.forEach((segment) => {
-	      const isActive = segment.dataset.lightIndex === activeIndex;
+	      const isActive = segment.dataset.lightIndex === activeLightIndex;
 	      segment.classList.toggle('is-active', isActive);
 	      segment.setAttribute('aria-pressed', isActive ? 'true' : 'false');
 	      segment.classList.remove('is-flipping');
@@ -1193,13 +1157,6 @@ window.addEventListener('scroll', function () {
 	      }
 	    });
 
-	    lightLabelSets.forEach((labelSet) => {
-	      labelSet.classList.toggle('is-hidden', labelSet.dataset.lightIndex === activeIndex);
-	    });
-
-	    lightDescSets.forEach((descSet) => {
-	      descSet.classList.toggle('is-active', descSet.dataset.lightIndex === activeIndex);
-	    });
 	  }
 
 	  lightSegments.forEach((segment) => {
