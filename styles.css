@@ -493,10 +493,12 @@ li {
 }
 
 .light-wheel-segment {
+  transform-box: fill-box;
+  transform-origin: center;
   stroke: #ddd2c1;
   stroke-width: 1.5;
   cursor: pointer;
-  transition: fill 0.22s ease, stroke 0.22s ease, stroke-width 0.22s ease, filter 0.22s ease;
+  transition: fill 0.22s ease, stroke 0.22s ease, stroke-width 0.22s ease, filter 0.22s ease, transform 0.22s ease;
 }
 
 .light-wheel-segment:focus {
@@ -513,6 +515,24 @@ li {
   fill: #ffe9a8;
   stroke: #ddd2c1;
   stroke-width: 1.5;
+}
+
+.light-wheel-segment.is-flipping {
+  animation: lightSegmentFlip 0.48s ease;
+}
+
+@keyframes lightSegmentFlip {
+  0% {
+    transform: scaleX(1);
+  }
+
+  45% {
+    transform: scaleX(0.08);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 .wheel-learning {
@@ -554,6 +574,51 @@ li {
   font-size: 14px;
   font-weight: 700;
   dominant-baseline: middle;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.light-wheel-label-set {
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 1;
+  transition: opacity 0.16s ease, transform 0.24s ease;
+}
+
+.light-wheel-label-set.is-hidden {
+  transform: scaleX(0.08);
+  opacity: 0;
+}
+
+.light-wheel-desc-set {
+  transform: scaleX(0.08);
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease 0.14s, transform 0.28s ease 0.1s;
+}
+
+.light-wheel-desc-set.is-active {
+  transform: scaleX(1);
+  opacity: 1;
+}
+
+.light-wheel-desc-title {
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 15px;
+  font-weight: 700;
+  dominant-baseline: middle;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+.light-wheel-desc-copy {
+  fill: #3f4a57;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 10.5px;
+  font-weight: 800;
+  line-height: 1.2;
   pointer-events: none;
   text-anchor: middle;
 }
@@ -662,6 +727,14 @@ li {
     margin-bottom: 18px;
     font-size: 0.72rem;
     letter-spacing: 0.1em;
+  }
+
+  .light-wheel-desc-title {
+    font-size: 14px;
+  }
+
+  .light-wheel-desc-copy {
+    font-size: 10px;
   }
 
   .light-wheel-detail {
@@ -5234,5 +5307,74 @@ footer.site-footer-v2 {
 
   .partners-section .partner-card {
     padding: 0;
+  }
+}
+
+@media (max-width: 860px) {
+  footer.site-footer-v2 {
+    display: block;
+    grid-template-columns: none;
+    justify-items: initial;
+    gap: 0;
+    overflow: hidden;
+    padding: 32px 18px 24px;
+    text-align: center;
+  }
+
+  .site-footer-v2 .sfv-shell,
+  .site-footer-v2 .sfv-band,
+  .site-footer-v2 .sfv-bar,
+  .site-footer-v2 .sfv-contact {
+    width: 100%;
+  }
+
+  .site-footer-v2 .sfv-band {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+
+  .site-footer-v2 .sfv-band img {
+    width: min(92vw, 544px);
+    max-width: 92vw;
+  }
+
+  .site-footer-v2 .sfv-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 0 0 22px;
+  }
+
+  .site-footer-v2 .sfv-brand {
+    font-size: clamp(1.15rem, 5vw, 1.45rem);
+  }
+
+  .site-footer-v2 .sfv-contact {
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .site-footer-v2 .sfv-link {
+    font-size: clamp(0.78rem, 3.4vw, 0.92rem);
+    line-height: 1.55;
+  }
+
+  .site-footer-v2 .sfv-line2 {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 10px;
+  }
+
+  .site-footer-v2 .sfv-socials {
+    justify-content: center;
+  }
+
+  .site-footer-v2 .sfv-copy {
+    font-size: clamp(0.58rem, 2.7vw, 0.72rem);
+    line-height: 1.35;
   }
 }
