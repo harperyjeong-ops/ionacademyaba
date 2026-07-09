@@ -1802,7 +1802,7 @@ details p {
 .partner-card {
   display: flex;
   height: 100%;
-  min-height: 275px;
+  min-height: 220px;
   flex-direction: column;
   justify-content: space-between;
   background: white;
@@ -1820,8 +1820,8 @@ details p {
 
 .band {
   display: grid;
-  gap: 8px;
-  padding: 26px 28px 24px;
+  gap: 5px;
+  padding: 16px 18px 15px;
   background: #fff2bf;
   border-bottom: 1px solid rgba(47, 37, 0, 0.12);
 }
@@ -1839,7 +1839,7 @@ details p {
 .pname {
   color: #201a11;
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(1.45rem, 2vw, 2rem);
+  font-size: clamp(1.02rem, 1.4vw, 1.4rem);
   font-weight: 700;
   line-height: 1.08;
 }
@@ -1849,22 +1849,22 @@ details p {
   flex: 1 1 auto;
   flex-direction: column;
   justify-content: space-between;
-  padding: 26px 28px 24px;
+  padding: 16px 18px 16px;
 }
 
 .pdesc {
-  margin: 0 0 22px;
+  margin: 0 0 14px;
   color: #4c473f;
-  font-size: 1rem;
-  line-height: 1.65;
+  font-size: 0.92rem;
+  line-height: 1.5;
 }
 
 .foot {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 18px;
-  padding-top: 22px;
+  gap: 12px;
+  padding-top: 14px;
   border-top: 1px solid rgba(47, 37, 0, 0.15);
   color: rgba(47, 37, 0, 0.68);
   font-weight: 700;
@@ -1888,7 +1888,7 @@ details p {
 
 .visit {
   color: var(--ink);
-  font-size: 1.03rem;
+  font-size: 0.9rem;
   font-weight: 900;
   white-space: nowrap;
 }
@@ -3679,5 +3679,552 @@ footer p {
 
   .family-topic-card > p:not(.family-topic-label) {
     font-size: clamp(0.84rem, 4vw, 0.98rem);
+  }
+}
+
+@media (max-width: 720px) {
+  body {
+    font-size: 15px;
+  }
+
+  h2,
+  .about-intro,
+  .testimonial h2,
+  .team h2,
+  .services h2,
+  .faq h2,
+  .resource-section h2,
+  .partners-section h2,
+  .contact h2,
+  .careers-copy h2,
+  .family-topics-kicker {
+    font-size: clamp(1.45rem, 5.2vw, 2rem);
+    line-height: 1.14;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2.35rem, 10vw, 3.3rem);
+    line-height: 1;
+  }
+
+  .intro .intro-primary-heading {
+    font-size: clamp(2rem, 8.2vw, 2.75rem);
+    line-height: 1.02;
+  }
+
+  .intro .intro-secondary-heading,
+  .team-grid h3,
+  .service-card-title h3,
+  .faq-category h3,
+  .faq-closing h3,
+  .careers-card h3,
+  .pname {
+    font-size: clamp(1.15rem, 4.4vw, 1.55rem);
+    line-height: 1.18;
+  }
+
+  .light-framework h2 {
+    font-size: clamp(1.25rem, 5vw, 1.65rem);
+  }
+
+  .light-joy p:first-child,
+  .intro p:not(.eyebrow),
+  .split-copy p,
+  .contact-copy p,
+  .services-intro,
+  .service-grid p,
+  details p,
+  .faq-closing p,
+  .family-topic-card > p:not(.family-topic-label),
+  .pdesc,
+  .team-grid ul,
+  footer p {
+    font-size: clamp(0.88rem, 3.4vw, 1rem);
+    line-height: 1.55;
+  }
+
+  .light-joy p:last-child {
+    font-size: clamp(1.35rem, 5.2vw, 1.7rem);
+  }
+
+  .family-topic-card h3 {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+  }
+}
+
+@media (max-width: 520px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2,
+  .about-intro,
+  .testimonial h2,
+  .team h2,
+  .services h2,
+  .faq h2,
+  .resource-section h2,
+  .partners-section h2,
+  .contact h2,
+  .careers-copy h2,
+  .family-topics-kicker {
+    font-size: clamp(1.25rem, 5.8vw, 1.65rem);
+    line-height: 1.14;
+  }
+
+  .hero-copy h1 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .intro .intro-primary-heading {
+    font-size: clamp(1.75rem, 7.6vw, 2.25rem);
+  }
+
+  .intro .intro-secondary-heading,
+  .team-grid h3,
+  .service-card-title h3,
+  .faq-category h3,
+  .faq-closing h3,
+  .careers-card h3,
+  .pname {
+    font-size: clamp(1rem, 4.6vw, 1.3rem);
+  }
+
+  .light-framework h2 {
+    font-size: clamp(1rem, 4.8vw, 1.28rem);
+  }
+
+  .light-joy p:first-child,
+  .intro p:not(.eyebrow),
+  .split-copy p,
+  .contact-copy p,
+  .services-intro,
+  .service-grid p,
+  details p,
+  .faq-closing p,
+  .family-topic-card > p:not(.family-topic-label),
+  .pdesc,
+  .team-grid ul,
+  footer p {
+    font-size: clamp(0.78rem, 3.8vw, 0.92rem);
+    line-height: 1.5;
+  }
+
+  .light-joy p:last-child {
+    font-size: clamp(1.15rem, 5.4vw, 1.45rem);
+  }
+
+  .family-topic-card h3 {
+    font-size: clamp(1.35rem, 7vw, 1.7rem);
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-copy .button.light {
+    min-height: 34px;
+    padding: 0 14px;
+    border-width: 1px;
+    border-radius: 6px;
+    font-size: 0.78rem;
+    line-height: 1.05;
+  }
+
+  .hero-copy .button.light::after {
+    margin-left: 6px;
+  }
+
+  .family-topics-grid {
+    grid-template-columns: repeat(3, minmax(142px, 1fr));
+    gap: 6px;
+    overflow-x: auto;
+  }
+
+  .family-topic-card {
+    padding: 16px 8px 18px;
+  }
+
+  .family-topic-card .family-topic-label {
+    margin-bottom: 8px;
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .family-topic-card h3 {
+    margin-bottom: 12px;
+    font-size: clamp(1.25rem, 5vw, 1.55rem);
+  }
+
+  .family-topic-card .family-topic-image {
+    width: min(92px, 68%);
+    margin-bottom: 12px;
+    padding: 7px;
+  }
+
+  .family-topic-card > p:not(.family-topic-label) {
+    font-size: 0.72rem;
+    line-height: 1.34;
+  }
+}
+
+@media (max-width: 520px) {
+  .hero-copy .button.light {
+    min-height: 30px;
+    padding: 0 12px;
+    font-size: 0.68rem;
+  }
+
+  .family-topics-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 5px;
+    overflow-x: visible;
+  }
+
+  .family-topic-card {
+    padding: 12px 5px 14px;
+  }
+
+  .family-topic-card .family-topic-label {
+    font-size: 0.48rem;
+    letter-spacing: 0.1em;
+  }
+
+  .family-topic-card h3 {
+    font-size: clamp(1.05rem, 5.6vw, 1.32rem);
+  }
+
+  .family-topic-card .family-topic-image {
+    width: min(72px, 70%);
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .family-topic-card > p:not(.family-topic-label) {
+    font-size: 0.62rem;
+    line-height: 1.28;
+  }
+}
+
+.partners-section .pname {
+  font-size: clamp(1.02rem, 1.4vw, 1.4rem);
+}
+
+@media (max-width: 720px) {
+  .partners-section .partner-card {
+    min-height: 190px;
+  }
+
+  .partners-section .band {
+    padding: 12px 12px 11px;
+  }
+
+  .partners-section .body {
+    padding: 12px;
+  }
+
+  .partners-section .pname {
+    font-size: clamp(0.82rem, 3vw, 1rem);
+  }
+}
+
+@media (max-width: 720px) {
+  .hero-copy p {
+    text-align: left;
+  }
+
+  .light-value-card {
+    min-height: 78px;
+    padding: 10px 3px 9px;
+  }
+
+  .light-letter {
+    margin-bottom: 5px;
+    font-size: clamp(1.3rem, 6.6vw, 1.7rem);
+  }
+
+  .light-value-card h3 {
+    font-size: clamp(0.5rem, 2.3vw, 0.64rem);
+    line-height: 1.05;
+  }
+}
+
+@media (max-width: 520px) {
+  .light-values {
+    gap: 4px;
+  }
+
+  .light-value-card {
+    min-height: 68px;
+    padding: 9px 2px 8px;
+    border-radius: 8px;
+  }
+
+  .light-letter {
+    margin-bottom: 4px;
+    font-size: clamp(1.1rem, 6vw, 1.42rem);
+  }
+
+  .light-value-card h3 {
+    font-size: clamp(0.42rem, 2.25vw, 0.56rem);
+  }
+}
+
+@media (max-width: 720px) {
+  footer {
+    grid-template-columns: minmax(0, 1fr) minmax(130px, 40vw) minmax(0, 1fr);
+    grid-template-rows: auto auto;
+    align-items: start;
+    column-gap: 6px;
+    row-gap: 10px;
+    padding: 18px 8px 12px;
+  }
+
+  footer > .footer-finale {
+    display: contents;
+  }
+
+  footer > .footer-finale img {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+    width: min(312px, 78vw);
+    max-width: none;
+    margin-top: 6px;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-self: center;
+    width: 100%;
+    max-width: none;
+    margin-top: 4px;
+    font-size: clamp(0.38rem, 1.75vw, 0.52rem);
+    line-height: 1.15;
+    text-align: center;
+    white-space: nowrap;
+  }
+
+  .footer-contact p,
+  .footer-contact a {
+    font-size: clamp(0.5rem, 2.25vw, 0.64rem);
+    line-height: 1.22;
+  }
+
+  .careers-copy p,
+  .careers-card p {
+    font-size: clamp(0.76rem, 3.2vw, 0.9rem);
+    line-height: 1.5;
+  }
+
+  .testimonial blockquote {
+    font-size: clamp(0.86rem, 3.6vw, 1.02rem);
+    line-height: 1.55;
+  }
+
+  .check-list li {
+    min-height: auto;
+    padding: 12px 14px;
+    font-size: clamp(0.72rem, 3vw, 0.86rem);
+    line-height: 1.45;
+  }
+
+  .check-list strong {
+    font-size: clamp(0.92rem, 3.6vw, 1.08rem);
+  }
+}
+
+@media (max-width: 520px) {
+  footer {
+    grid-template-columns: minmax(0, 1fr) minmax(112px, 38vw) minmax(0, 1fr);
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+
+  footer > .footer-finale img {
+    width: min(280px, 76vw);
+  }
+
+  .footer-copyright {
+    font-size: clamp(0.32rem, 1.6vw, 0.44rem);
+  }
+
+  .careers-copy p,
+  .careers-card p {
+    font-size: clamp(0.68rem, 3.4vw, 0.82rem);
+  }
+
+  .testimonial blockquote {
+    font-size: clamp(0.78rem, 3.7vw, 0.92rem);
+  }
+
+  .check-list li {
+    grid-template-columns: 34px minmax(0, 1fr);
+    gap: 10px;
+    padding: 10px 12px;
+    font-size: clamp(0.64rem, 3.15vw, 0.78rem);
+  }
+
+  .check-list strong {
+    font-size: clamp(0.82rem, 3.7vw, 0.98rem);
+  }
+}
+
+@media (max-width: 720px) {
+  .careers-section {
+    grid-template-columns: minmax(0, 1.08fr) minmax(128px, 0.78fr);
+    gap: 12px;
+    align-items: stretch;
+    padding: 30px 10px;
+  }
+
+  .careers-copy {
+    min-width: 0;
+  }
+
+  .careers-copy h2 {
+    margin-bottom: 10px;
+    font-size: clamp(1.75rem, 7.2vw, 2.55rem);
+    line-height: 0.98;
+  }
+
+  .careers-lede {
+    margin-bottom: 20px;
+    font-size: clamp(0.7rem, 2.9vw, 0.9rem);
+    line-height: 1.2;
+  }
+
+  .careers-copy p {
+    margin: 0 0 15px;
+    max-width: none;
+    font-size: clamp(0.64rem, 2.85vw, 0.82rem);
+    line-height: 1.54;
+  }
+
+  .careers-copy blockquote {
+    margin-top: 20px;
+    padding-left: 12px;
+    border-left-width: 4px;
+  }
+
+  .careers-copy blockquote strong {
+    font-size: clamp(0.88rem, 3.7vw, 1.18rem);
+    line-height: 1.16;
+  }
+
+  .careers-card {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    justify-content: center;
+    padding: 16px 10px;
+    border-radius: 8px;
+  }
+
+  .careers-card img {
+    width: min(86px, 72%);
+    height: auto;
+    margin-bottom: 14px;
+  }
+
+  .careers-card h3 {
+    margin-bottom: 10px;
+    font-size: clamp(1.05rem, 4.5vw, 1.35rem);
+    line-height: 1.08;
+  }
+
+  .careers-card p {
+    margin-bottom: 14px;
+    font-size: clamp(0.62rem, 2.8vw, 0.78rem);
+    line-height: 1.38;
+  }
+
+  .careers-button {
+    min-height: 38px;
+    margin-bottom: 14px;
+    padding: 0 8px;
+    border-radius: 8px;
+    font-size: clamp(0.6rem, 2.7vw, 0.8rem);
+    line-height: 1.1;
+  }
+
+  .careers-card strong {
+    font-size: clamp(0.62rem, 2.7vw, 0.78rem);
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  .careers-card small {
+    margin-top: 12px;
+    font-size: clamp(0.55rem, 2.3vw, 0.68rem);
+    line-height: 1.3;
+  }
+}
+
+@media (max-width: 520px) {
+  .careers-section {
+    grid-template-columns: minmax(0, 1.08fr) minmax(112px, 0.72fr);
+    gap: 8px;
+    padding: 24px 8px;
+  }
+
+  .careers-copy h2 {
+    font-size: clamp(1.42rem, 8.2vw, 2.05rem);
+  }
+
+  .careers-lede {
+    margin-bottom: 16px;
+    font-size: clamp(0.58rem, 3vw, 0.75rem);
+  }
+
+  .careers-copy p {
+    margin-bottom: 12px;
+    font-size: clamp(0.54rem, 2.85vw, 0.7rem);
+    line-height: 1.48;
+  }
+
+  .careers-copy blockquote {
+    margin-top: 16px;
+    padding-left: 9px;
+    border-left-width: 3px;
+  }
+
+  .careers-copy blockquote strong {
+    font-size: clamp(0.72rem, 4vw, 0.98rem);
+  }
+
+  .careers-card {
+    padding: 12px 7px;
+  }
+
+  .careers-card img {
+    width: min(70px, 72%);
+    margin-bottom: 10px;
+  }
+
+  .careers-card h3 {
+    margin-bottom: 8px;
+    font-size: clamp(0.82rem, 4.6vw, 1.08rem);
+  }
+
+  .careers-card p {
+    margin-bottom: 10px;
+    font-size: clamp(0.52rem, 2.85vw, 0.66rem);
+  }
+
+  .careers-button {
+    min-height: 30px;
+    margin-bottom: 10px;
+    padding: 0 6px;
+    font-size: clamp(0.5rem, 2.8vw, 0.64rem);
+  }
+
+  .careers-card strong {
+    font-size: clamp(0.5rem, 2.8vw, 0.64rem);
+  }
+
+  .careers-card small {
+    margin-top: 9px;
+    font-size: clamp(0.46rem, 2.45vw, 0.58rem);
   }
 }
