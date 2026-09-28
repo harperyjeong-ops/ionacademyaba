@@ -5124,3 +5124,80 @@ footer.site-footer-v2 {
     line-height: 1.35;
   }
 }
+
+/* Clickable services categories */
+
+  .ion-svc {
+    --ion-yellow: #ECC652;
+    --ion-cream: #F9F5E9;
+    --ion-ink: #1F1B0A;
+    --ion-body: #4A4535;
+    --ion-gold: #8A6A10;
+    --ion-btn: #2E2A0E;
+    --ion-line: #E0D5B5;
+    background: var(--ion-cream);
+    padding: 80px 24px;
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    color: var(--ion-ink);
+    box-sizing: border-box;
+  }
+  .ion-svc *, .ion-svc *::before, .ion-svc *::after { box-sizing: border-box; }
+  .ion-svc__inner { max-width: 1120px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px; }
+
+  .ion-svc__head { text-align: center; display: flex; flex-direction: column; gap: 14px; }
+  .ion-svc__eyebrow { font-size: 13px; font-weight: 600; letter-spacing: .14em; color: var(--ion-gold); margin: 0; }
+  .ion-svc__title { margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 44px; line-height: 1.15; font-weight: 700; color: var(--ion-ink); }
+
+  .ion-svc__tabs { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+  .ion-svc__tab {
+    min-height: 56px; padding: 12px 16px; border-radius: 12px;
+    border: 2px solid var(--ion-line); background: #fff; color: var(--ion-body);
+    font: 600 16px/1.2 Inter, system-ui, sans-serif; cursor: pointer;
+    display: flex; align-items: center; justify-content: center; gap: 10px; text-align: center;
+    transition: background .15s, border-color .15s, color .15s;
+  }
+  .ion-svc__tab:hover { border-color: var(--ion-ink); }
+  .ion-svc__tab:focus-visible { outline: 3px solid var(--ion-gold); outline-offset: 2px; }
+  .ion-svc__tab[aria-selected="true"] { background: var(--ion-yellow); border-color: var(--ion-ink); color: var(--ion-ink); }
+  .ion-svc__num { font-size: 12px; letter-spacing: .1em; color: var(--ion-gold); }
+  .ion-svc__tab[aria-selected="true"] .ion-svc__num { color: var(--ion-ink); }
+
+  .ion-svc__panel {
+    background: #fff; border-radius: 18px; padding: 40px;
+    display: grid; grid-template-columns: 280px minmax(0, 1fr); gap: 48px;
+    box-shadow: 0 6px 24px rgba(60, 50, 10, .08);
+  }
+  .ion-svc__panel[hidden] { display: none; }
+  .ion-svc__intro { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+  .ion-svc__intro h3 { margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 30px; font-weight: 700; color: var(--ion-ink); }
+  .ion-svc__intro p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--ion-body); }
+  .ion-svc__btn {
+    margin-top: 8px; display: inline-flex; align-items: center; gap: 8px;
+    min-height: 44px; padding: 0 20px; border-radius: 999px;
+    background: var(--ion-btn); color: #fff !important; font-size: 14px; font-weight: 600; text-decoration: none !important;
+    transition: opacity .15s;
+  }
+  .ion-svc__btn:hover { opacity: .88; }
+  .ion-svc__btn:focus-visible { outline: 3px solid var(--ion-gold); outline-offset: 2px; }
+
+  .ion-svc__cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-content: start; }
+  .ion-svc__card { background: #FBF8EF; border: 1px solid #EDE5CC; border-radius: 12px; padding: 22px 24px; display: flex; flex-direction: column; gap: 8px; }
+  .ion-svc__card h4 { margin: 0; font-family: 'Playfair Display', Georgia, serif; font-size: 20px; font-weight: 700; color: var(--ion-ink); }
+  .ion-svc__card p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--ion-body); }
+
+  /* Tablet */
+  @media (max-width: 900px) {
+    .ion-svc { padding: 56px 16px; }
+    .ion-svc__title { font-size: 34px; }
+    .ion-svc__tabs { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .ion-svc__panel { grid-template-columns: 1fr; gap: 28px; padding: 28px; }
+  }
+  /* Phone */
+  @media (max-width: 600px) {
+    .ion-svc__title { font-size: 28px; }
+    .ion-svc__tab { font-size: 14px; padding: 10px 12px; }
+    .ion-svc__cards { grid-template-columns: 1fr; }
+    .ion-svc__panel { padding: 22px; }
+  }
+
+.ion-svc__panel:focus-visible { outline: 3px solid var(--ion-gold); outline-offset: 4px; }
