@@ -53,7 +53,7 @@ a {
   display: flex;
   align-items: center;
   gap: 28px;
-  width: min(94vw, 1040px);
+  width: min(94vw, 1400px);
   height: 50px;
   margin: 10px auto 0;
   padding: 6px 8px 6px 12px;
@@ -1450,6 +1450,47 @@ details p {
   height: auto;
   margin: 0 auto 30px;
   object-fit: contain;
+}
+
+.provider-referral {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.provider-referral h3 {
+  margin: 0 0 10px;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.contact-copy .provider-referral p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.provider-referral .button {
+  margin-top: 20px;
+}
+
+.partners-section .provider-referral {
+  padding: 32px 24px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: white;
+  text-align: center;
+}
+
+.partners-section .provider-referral h3 {
+  color: var(--ink);
+}
+
+.partners-section .provider-referral p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 .contact-cta {
@@ -3057,7 +3098,7 @@ footer p {
   white-space: nowrap;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1440px) {
   .site-header {
     width: calc(100% - 20px);
     max-width: 100%;
@@ -4814,7 +4855,7 @@ footer p {
   color: #f4b400;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1440px) {
   .site-header .brand span {
     font-size: clamp(0.86rem, 2vw, 1.08rem);
   }
